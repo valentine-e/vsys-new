@@ -22,9 +22,17 @@
 
       <div class="container">
         <div class="topbar">
-          <a class="topbar__quality" href="#">
-            TRUSTED HOSTING PROVIDER SINCE 2009</a
-          >
+          <div class="topbar__quality">
+            <svg width="40" height="40">
+              <use class="" href="./images/sprite.svg#quality-badge"></use>
+            </svg>
+            <a class="topbar__quality-link" href="#">
+              TRUSTED HOSTING PROVIDER SINCE 2009</a
+            >
+            <svg width="40" height="40">
+              <use class="" href="./images/sprite.svg#quality-badge"></use>
+            </svg>
+          </div>
 
           <ul class="topbar__list">
             <li class="topbar__item">
@@ -40,9 +48,9 @@
             </li>
             <li class="topbar__item">
               <button class="topbar__button topbar__button--lang">
-                <svg class="topbar__button--lang" width="40" height="40">
+                <svg width="40" height="40">
                   <use
-                    class="topbar__image"
+                    class="topbar__planet"
                     href="./images/sprite.svg#planet-icon"
                   ></use>
                 </svg>
@@ -155,9 +163,7 @@
           </div>
         </div>
 
-        <div class="hero__background">
-          <div class="hero__background-img"></div>
-        </div>
+        <div class="hero__background-img"></div>
       </section>
     </main>
 
@@ -170,40 +176,65 @@
         >
 
         <div class="footer__content">
-          <p class="footer__description">
-            Virtual Systems - offshore anonymous web hosting. We protect from
-            shutdowns, keep your website online & your identity private. Join us
-            for hassle-free website hosting experience!
-          </p>
+          <div>
+            <p class="footer__description">
+              Virtual Systems - offshore anonymous web hosting. We protect from
+              shutdowns, keep your website online & your identity private. Join
+              us for hassle-free website hosting experience!
+            </p>
 
-          <div class="footer__nav">
-            <div>
-              <h3>SERVICES</h3>
-              <ul>
-                <li><a href="#"></a>Web hosting</li>
-                <li><a href="#"></a>Web hosting</li>
-                <li><a href="#"></a>Web hosting</li>
-                <li><a href="#"></a>Web hosting</li>
+            <address>
+              <ul class="footer-contacts__list">
+                <li>
+                  <a class="footer-contacts__adress" href="#"
+                    >Dehtyarivska street 4-A, office <br />
+                    505, Kyiv 04050, Ukraine</a
+                  >
+                </li>
+                <li>
+                  <a class="footer-contacts__phone" href="#"
+                    >+38 (044) 591-56-79</a
+                  >
+                </li>
+                <li>
+                  <a class="footer-contacts__mail" href="#">info@v-sys.org</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-nav">
+            <div class="footer__box">
+              <h3 class="footer__subtitle">SERVICES</h3>
+              <ul class="footer-nav__list">
+                <li><a class="footer-nav__link" href="#">Web hosting</a></li>
+                <li><a class="footer-nav__link" href="#">VPS hosting</a></li>
+                <li><a class="footer-nav__link" href="#">Dedicatet</a></li>
+                <li><a class="footer-nav__link" href="#">Anti-DDoS</a></li>
               </ul>
             </div>
 
-            <div>
-              <h3>SERVICES</h3>
-              <ul>
-                <li><a href="#"></a>Web hosting</li>
-                <li><a href="#"></a>Web hosting</li>
-                <li><a href="#"></a>Web hosting</li>
-                <li><a href="#"></a>Web hosting</li>
+            <div class="footer__box">
+              <h3 class="footer__subtitle">COMPANY</h3>
+              <ul class="footer-nav__list">
+                <li><a class="footer-nav__link" href="#">Abut us</a></li>
+                <li>
+                  <a class="footer-nav__link" href="#">Terms of service </a>
+                </li>
+                <li><a class="footer-nav__link" href="#">Privacy policy</a></li>
+                <li><a class="footer-nav__link" href="#">Anti-DDoS</a></li>
               </ul>
             </div>
 
-            <div>
-              <h3>SERVICES</h3>
-              <ul>
-                <li><a href="#"></a>Web hosting</li>
-                <li><a href="#"></a>Web hosting</li>
-                <li><a href="#"></a>Web hosting</li>
-                <li><a href="#"></a>Web hosting</li>
+            <div class="footer__box">
+              <h3 class="footer__subtitle">SERVICES</h3>
+              <ul class="footer-nav__list">
+                <li>
+                  <a class="footer-nav__link" href="#">Terms of service </a>
+                </li>
+                <li><a class="footer-nav__link" href="#">VPS hosting</a></li>
+                <li><a class="footer-nav__link" href="#">Dedicatet</a></li>
+                <li><a class="footer-nav__link" href="#">Web hosting</a></li>
               </ul>
             </div>
           </div>

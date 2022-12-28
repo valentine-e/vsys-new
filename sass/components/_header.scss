@@ -3,7 +3,7 @@
 }
 
 .topbar {
-  padding: 10px 0 10px 40px;
+  padding: 10px 0 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,40 +14,26 @@
 }
 
 .topbar__quality {
+  display: flex;
+  align-items: center;
+}
+
+.topbar__quality-link {
   color: var(--secondary-text-color);
   border-bottom: 1px solid;
   position: relative;
+  white-space: nowrap;
+}
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -40px;
-    background-image: url(/images/for-sprite-delete/quality-badge.svg);
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -40px;
-    background-image: url(/images/for-sprite-delete/big-arrow-icon.svg);
-  }
+.topbar__planet {
+  fill: currentColor;
 }
 
 .topbar__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 40%;
+  min-width: 40%;
 }
 
 .topbar__button {
@@ -66,20 +52,6 @@
 .topbar__button--white {
   background-color: var(--secondary-text-color);
   color: var(--secondary-background-color);
-  // position: relative;
-
-  // &::after {
-  //   content: "";
-  //   display: block;
-
-  //   position: absolute;
-
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   width: 7px;
-  //   height: 4px;
-  //   background-image: url(/images/for-sprite-delete/arrow-icon.svg);
-  // }
 }
 
 .topbar__button--lang {
@@ -88,19 +60,6 @@
   display: flex;
   align-items: center;
   text-transform: none;
-  // position: relative;
-
-  // &::after {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   right: -12px;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   width: 7px;
-  //   height: 4px;
-  //   background-image: url(/images/for-sprite-delete/arrow-icon.svg);
-  // }
 }
 
 .navbar {
@@ -113,7 +72,7 @@
 .navbar__list {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  min-width: 60%;
 }
 
 .vsys-logo {
