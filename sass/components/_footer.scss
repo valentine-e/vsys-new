@@ -1,0 +1,26 @@
+.footer {
+  background-color: var(--secondary-background-color);
+  padding: 40px 0;
+
+  & .vsys-logo {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__content {
+  display: flex;
+  gap: 10%;
+}
+
+.footer__description {
+  color: var(--secondary-text-color);
+  width: 45%;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.footer__nav {
+  width: 45%;
+  justify-content: space-between;
+  display: flex;
+}
