@@ -38,16 +38,19 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -71,7 +74,7 @@ p {
   margin-left: 2px;
   vertical-align: middle;
   border-top: 4px dashed;
-  border-top: 4px solid\9 ;
+  border-top: 4px solid\9;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
@@ -159,6 +162,7 @@ p {
   white-space: nowrap;
   cursor: pointer;
 }
+
 .topbar__button:hover {
   color: var(--secondary-background-color);
   background-color: var(--primary-background-color);
@@ -176,6 +180,7 @@ p {
   align-items: center;
   text-transform: none;
 }
+
 .topbar__button--lang:hover {
   background-color: var(--secondary-background-color);
   color: var(--secondary-text-color);
@@ -196,6 +201,18 @@ p {
 
 .navbar__item {
   position: relative;
+}
+
+.navbar__dropdown {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+.navbar__dropdown--open {
+  display: block;
 }
 
 .vsys-logo {
@@ -233,6 +250,7 @@ p {
   position: relative;
   background: linear-gradient(180deg, #191f32 2.92%, #305e8a 49.72%, #4aa7f0 97.41%);
 }
+
 .hero .section {
   padding: 60px 0 200px 0;
 }
@@ -335,6 +353,7 @@ p {
   background-color: var(--secondary-text-color);
   border-radius: 15px 15px 0 0;
 }
+
 .prices-menu__item:hover {
   padding-top: 19px;
   scale: 1.05;
@@ -383,9 +402,11 @@ p {
   align-items: center;
   padding: 10px 0;
 }
+
 .accordion__btn:focus + .accordion__info {
   max-height: max-content;
 }
+
 .accordion__btn:focus > .accordion__arrow {
   transform: rotate(0);
 }
@@ -421,6 +442,7 @@ p {
   background-color: var(--secondary-background-color);
   padding: 40px 0;
 }
+
 .footer .vsys-logo {
   margin-bottom: 20px;
 }
@@ -497,4 +519,5 @@ p {
   color: var(--secondary-text-color);
   font-style: normal;
   font-size: 18px;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

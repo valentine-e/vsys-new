@@ -93,17 +93,17 @@
   position: relative;
 }
 
-// .navbar__dropdown {
-//   z-index: 1;
-//   position: absolute;
-//   top: 100%;
-//   left: 0;
-//   display: none;
-// }
+.navbar__dropdown {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
 
-// .navbar__item:hover .navbar__dropdown {
-//   display: block;
-// }
+.navbar__dropdown--open {
+  display: block;
+}
 
 .vsys-logo {
   font-family: var(--title-font);
