@@ -58,6 +58,12 @@ p {
   padding: 60px 0;
 }
 
+.section-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: var(--title-font);
+}
+
 .menu-arrow {
   display: inline-block;
   width: 0;
@@ -75,12 +81,21 @@ p {
   color: var(--light-blue-text);
 }
 
+.section-title {
+  font-size: 40px;
+  background: -webkit-linear-gradient(#333d5e, #4aa7f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 :root {
   --primary-font: "IBM Plex Sans", sans-serif;
   --title-font: "Fira Sans Condensed", sans-serif;
   --primary-text-color: #212121;
   --secondary-text-color: #ffffff;
   --light-blue-text: #a8d5f8;
+  --grey-text-color: #6c6c6c;
+  --price-accent-color: #333d5e;
   --accent-color: #4aa7f0;
   --primary-background-color: #ffffff;
   /* --secondary-background-color: linear-gradient(red, yellow); */
@@ -117,7 +132,11 @@ p {
   white-space: nowrap;
 }
 
-.topbar__planet {
+.planet-icon {
+  fill: currentColor;
+}
+
+.big-arrow {
   fill: currentColor;
 }
 
@@ -140,6 +159,10 @@ p {
   white-space: nowrap;
   cursor: pointer;
 }
+.topbar__button:hover {
+  color: var(--secondary-background-color);
+  background-color: var(--primary-background-color);
+}
 
 .topbar__button--white {
   background-color: var(--secondary-text-color);
@@ -153,6 +176,10 @@ p {
   align-items: center;
   text-transform: none;
 }
+.topbar__button--lang:hover {
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+}
 
 .navbar {
   display: flex;
@@ -165,6 +192,10 @@ p {
   display: flex;
   justify-content: space-between;
   min-width: 60%;
+}
+
+.navbar__item {
+  position: relative;
 }
 
 .vsys-logo {
@@ -221,7 +252,6 @@ p {
   display: flex;
   flex-flow: column;
   position: relative;
-  z-index: 1;
 }
 
 .hero__title {
@@ -268,6 +298,7 @@ p {
   font-weight: 600;
   padding: 20px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .hero__button--white {
@@ -279,6 +310,111 @@ p {
   color: var(--secondary-text-color);
   background-color: transparent;
   border: 1px solid var(--primary-background-color);
+}
+
+.prices-container {
+  position: relative;
+}
+
+.prices-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  position: absolute;
+  bottom: -100%;
+  z-index: 10;
+}
+
+.prices-menu__item {
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  width: 25%;
+  padding: 20px;
+  background-color: var(--secondary-text-color);
+  border-radius: 15px 15px 0 0;
+}
+.prices-menu__item:hover {
+  padding-top: 19px;
+  scale: 1.05;
+  border-top: 1px solid var(--price-accent-color);
+  border-left: 1px solid var(--price-accent-color);
+  border-right: 1px solid var(--price-accent-color);
+}
+
+.prices-menu__title {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.prices-menu__info {
+  color: var(--price-accent-color);
+  text-align: center;
+  font-size: 16px;
+}
+
+.prices-menu__price {
+  color: var(--price-accent-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.accordion {
+  width: 50%;
+}
+
+.accordion__item {
+  border-bottom: 1px solid var(--grey-text-color);
+  margin-top: 10px;
+}
+
+.accordion__btn {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.accordion__btn:focus + .accordion__info {
+  max-height: max-content;
+}
+.accordion__btn:focus > .accordion__arrow {
+  transform: rotate(0);
+}
+
+.accordion__title {
+  color: var(--primary-text-color);
+  font-family: var(--title-font);
+  white-space: nowrap;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.accordion__info {
+  color: var(--grey-text-color);
+  max-height: 0;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.accordion__arrow {
+  fill: currentColor;
+  transform: rotate(-90deg);
+}
+
+.accordion__svg {
+  fill: currentColor;
 }
 
 .footer {
@@ -336,7 +472,7 @@ p {
 .footer-contacts__adress {
   color: var(--secondary-text-color);
   font-style: normal;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 500;
   font-size: 18px;
 }
