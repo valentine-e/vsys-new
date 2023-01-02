@@ -29,8 +29,12 @@
   fill: currentColor;
 }
 
+.quality-badge {
+  fill: transparent;
+}
+
 .big-arrow {
-  fill: currentColor;
+  fill: var(--secondary-text-color);
 }
 
 .topbar__list {
@@ -49,6 +53,8 @@
   border: 1px solid var(--secondary-text-color);
   border-radius: 8px;
   padding: 6px 16px;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
   cursor: pointer;
 
@@ -93,18 +99,6 @@
   position: relative;
 }
 
-.navbar__dropdown {
-  z-index: 1;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-}
-
-.navbar__dropdown--open {
-  display: block;
-}
-
 .vsys-logo {
   font-family: var(--title-font);
   text-transform: uppercase;
@@ -136,4 +130,27 @@
   font-size: 14px;
   text-transform: uppercase;
   padding: 15px 5px;
+  align-items: center;
+  display: flex;
+}
+
+.navbar-dropdown {
+  z-index: 1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  display: none;
+  background-color: var(--secondary-text-color);
+  color: var(--primary-text-color);
+}
+
+.navbar__item--open + .navbar-dropdown {
+  display: block;
+}
+
+.navbar-dropdown__link {
+  white-space: nowrap;
+  width: 100%;
+  padding: 10px;
 }
