@@ -35,19 +35,42 @@
           </div>
 
           <ul class="topbar__list">
-            <li class="topbar__item">
-              <button class="topbar__button topbar__button--white">
-                CONTACT US<span class="menu-arrow"></span>
-              </button>
+            <li class="navbar__item">
+              <a
+                class="dropdown__button topbar__button topbar__button--white"
+                href="#"
+                >CONTACT US<span class="menu-arrow"></span
+              ></a>
+              <ul class="navbar-dropdown dropdown__list">
+                <li>
+                  <a class="dropdown__link" href="#"
+                    >OPEN A NEW SUPPORT TICKET</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">CONTACT US FORM</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">LIVE CHAT</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">E-MAIL: INFO@VSYS.HOST</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">TEL: +380 (44) 591-5679</a>
+                </li>
+              </ul>
             </li>
             <li class="topbar__item">
               <button class="topbar__button">LOGIN</button>
             </li>
-            <li class="topbar__item">
+
+            <!-- <li class="topbar__item">
               <button class="topbar__button">SIGN UP</button>
-            </li>
-            <li class="topbar__item">
-              <button class="topbar__button topbar__button--lang">
+            </li> -->
+
+            <li class="navbar__item">
+              <a class="dropdown__button topbar__button topbar__button--lang">
                 <svg width="40" height="40">
                   <use
                     class="planet-icon"
@@ -55,8 +78,29 @@
                   ></use>
                 </svg>
                 English <span class="menu-arrow"></span>
-              </button>
+              </a>
+              <ul class="navbar-dropdown dropdown__list">
+                <li>
+                  <a class="dropdown__link" href="#">UA</a>
+                </li>
+                <li>
+                  <a class="dropdown__link" href="#">Русский</a>
+                </li>
+                <li></li>
+              </ul>
             </li>
+
+            <!-- <li class="topbar__item">
+              <a class="dropdown__button topbar__button topbar__button--lang">
+                <svg width="40" height="40">
+                  <use
+                    class="planet-icon"
+                    href="./images/sprite.svg#planet-icon"
+                  ></use>
+                </svg>
+                English <span class="menu-arrow"></span>
+              </a>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -72,385 +116,285 @@
 
           <ul class="navbar__list">
             <li class="navbar__item">
-              <a class="navbar__link" href="#"
+              <a class="dropdown__list dropdown__button" href="#"
                 >Servers<span class="menu-arrow"></span
               ></a>
               <ul class="navbar-dropdown">
                 <li>
-                  <a class="navbar-dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
+                  <a class="dropdown__link" href="#"
                     >SERVERS IN THE NETHERLANDS</a
                   >
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SERVERS IN THE USA</a
-                  >
+                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">10 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">20 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >STREAMING SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">GPU SERVERS</a>
+                  <a class="dropdown__link" href="#">GPU SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >NVME DEDICATED SERVER</a
-                  >
+                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">STORAGE SERVERS</a>
+                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SSD STORAGE SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
                 </li>
               </ul>
             </li>
 
             <li class="navbar__item">
-              <a class="navbar__link" href="#"
-                >Servers<span class="menu-arrow"></span
+              <a class="dropdown__list dropdown__button" href="#"
+                >VPS<span class="menu-arrow"></span
               ></a>
               <ul class="navbar-dropdown">
                 <li>
-                  <a class="navbar-dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
+                  <a class="dropdown__link" href="#"
                     >SERVERS IN THE NETHERLANDS</a
                   >
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SERVERS IN THE USA</a
-                  >
+                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">10 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">20 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >STREAMING SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">GPU SERVERS</a>
+                  <a class="dropdown__link" href="#">GPU SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >NVME DEDICATED SERVER</a
-                  >
+                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">STORAGE SERVERS</a>
+                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SSD STORAGE SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
                 </li>
               </ul>
             </li>
 
             <li class="navbar__item">
-              <a class="navbar__link" href="#"
-                >Servers<span class="menu-arrow"></span
+              <a class="dropdown__list dropdown__button" href="#">HOSTING</a>
+            </li>
+
+            <li class="navbar__item">
+              <a class="dropdown__list dropdown__button" href="#"
+                >Cloud<span class="menu-arrow"></span
               ></a>
               <ul class="navbar-dropdown">
                 <li>
-                  <a class="navbar-dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
+                  <a class="dropdown__link" href="#"
                     >SERVERS IN THE NETHERLANDS</a
                   >
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SERVERS IN THE USA</a
-                  >
+                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">10 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">20 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >STREAMING SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">GPU SERVERS</a>
+                  <a class="dropdown__link" href="#">GPU SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >NVME DEDICATED SERVER</a
-                  >
+                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">STORAGE SERVERS</a>
+                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SSD STORAGE SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
                 </li>
               </ul>
             </li>
 
             <li class="navbar__item">
-              <a class="navbar__link" href="#"
-                >Servers<span class="menu-arrow"></span
+              <a class="dropdown__list dropdown__button" href="#"
+                >Services<span class="menu-arrow"></span
               ></a>
               <ul class="navbar-dropdown">
                 <li>
-                  <a class="navbar-dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
+                  <a class="dropdown__link" href="#"
                     >SERVERS IN THE NETHERLANDS</a
                   >
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SERVERS IN THE USA</a
-                  >
+                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">10 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">20 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >STREAMING SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">GPU SERVERS</a>
+                  <a class="dropdown__link" href="#">GPU SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >NVME DEDICATED SERVER</a
-                  >
+                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">STORAGE SERVERS</a>
+                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SSD STORAGE SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
                 </li>
               </ul>
             </li>
 
             <li class="navbar__item">
-              <a class="navbar__link" href="#"
-                >Servers<span class="menu-arrow"></span
+              <a class="dropdown__list dropdown__button" href="#"
+                >Solutions<span class="menu-arrow"></span
               ></a>
               <ul class="navbar-dropdown">
                 <li>
-                  <a class="navbar-dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
+                  <a class="dropdown__link" href="#"
                     >SERVERS IN THE NETHERLANDS</a
                   >
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SERVERS IN THE USA</a
-                  >
+                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">10 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">20 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >STREAMING SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">GPU SERVERS</a>
+                  <a class="dropdown__link" href="#">GPU SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >NVME DEDICATED SERVER</a
-                  >
+                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">STORAGE SERVERS</a>
+                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SSD STORAGE SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
                 </li>
               </ul>
             </li>
 
             <li class="navbar__item">
-              <a class="navbar__link" href="#"
-                >Servers<span class="menu-arrow"></span
+              <a class="dropdown__list dropdown__button" href="#"
+                >Company<span class="menu-arrow"></span
               ></a>
               <ul class="navbar-dropdown">
                 <li>
-                  <a class="navbar-dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
+                  <a class="dropdown__link" href="#"
                     >SERVERS IN THE NETHERLANDS</a
                   >
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SERVERS IN THE USA</a
-                  >
+                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">10 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">20 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >STREAMING SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">GPU SERVERS</a>
+                  <a class="dropdown__link" href="#">GPU SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >NVME DEDICATED SERVER</a
-                  >
+                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">STORAGE SERVERS</a>
+                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SSD STORAGE SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
                 </li>
               </ul>
             </li>
 
             <li class="navbar__item">
-              <a class="navbar__link" href="#"
-                >Servers<span class="menu-arrow"></span
+              <a class="dropdown__list dropdown__button" href="#"
+                >Recources<span class="menu-arrow"></span
               ></a>
               <ul class="navbar-dropdown">
                 <li>
-                  <a class="navbar-dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
+                  <a class="dropdown__link" href="#"
                     >SERVERS IN THE NETHERLANDS</a
                   >
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SERVERS IN THE USA</a
-                  >
+                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">10 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">20 GBPS SERVERS</a>
+                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >STREAMING SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">GPU SERVERS</a>
+                  <a class="dropdown__link" href="#">GPU SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >NVME DEDICATED SERVER</a
-                  >
+                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#">STORAGE SERVERS</a>
+                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
                 </li>
                 <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SSD STORAGE SERVERS</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <li class="navbar__item">
-              <a class="navbar__link" href="#"
-                >Servers<span class="menu-arrow"></span
-              ></a>
-              <ul class="navbar-dropdown">
-                <li>
-                  <a class="navbar-dropdown__link" href="#">OFFSHORE SERVERS</a>
-                </li>
-                <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SERVERS IN THE NETHERLANDS</a
-                  >
-                </li>
-                <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SERVERS IN THE USA</a
-                  >
-                </li>
-                <li>
-                  <a class="navbar-dropdown__link" href="#">10 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="navbar-dropdown__link" href="#">20 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >STREAMING SERVERS</a
-                  >
-                </li>
-                <li>
-                  <a class="navbar-dropdown__link" href="#">GPU SERVERS</a>
-                </li>
-                <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >NVME DEDICATED SERVER</a
-                  >
-                </li>
-                <li>
-                  <a class="navbar-dropdown__link" href="#">STORAGE SERVERS</a>
-                </li>
-                <li>
-                  <a class="navbar-dropdown__link" href="#"
-                    >SSD STORAGE SERVERS</a
-                  >
+                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
                 </li>
               </ul>
             </li>
@@ -463,6 +407,8 @@
 
     <main>
       <section class="hero">
+        <div class="hero__background-img"></div>
+
         <div class="container section hero__content">
           <h1 class="hero__title">
             QUALITY HAS A NAME — VSYS HOST, THE TOP-NOTCH HOSTING PROVIDER
@@ -504,8 +450,6 @@
             </div>
           </div>
         </div>
-
-        <div class="hero__background-img"></div>
       </section>
 
       <!-- Prices  -->
