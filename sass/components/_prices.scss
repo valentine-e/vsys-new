@@ -17,18 +17,34 @@
   display: flex;
   gap: 10px;
   width: 25%;
-  padding: 20px;
+  padding: 20px 15px 15px 15px;
   background-color: var(--secondary-text-color);
   border-radius: 15px 15px 0 0;
+  justify-content: space-between;
+  transition: scale 300ms var(--timing-function);
 
   &:hover {
-    padding-top: 19px;
+    padding: 19px 14px 14px 14px;
     scale: 1.05;
     // outline: 1px solid var(--price-accent-color);
     border-top: 1px solid var(--price-accent-color);
     border-left: 1px solid var(--price-accent-color);
     border-right: 1px solid var(--price-accent-color);
   }
+}
+
+.prices-menu__img {
+  width: 60px;
+  height: 60px;
+}
+
+.prices-menu__svg {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.prices-menu__content {
+  width: 70%;
 }
 
 .prices-menu__title {
@@ -39,6 +55,7 @@
   text-transform: uppercase;
   margin-bottom: 5px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .prices-menu__info {

@@ -1,6 +1,11 @@
 :root {
   --primary-font: "IBM Plex Sans", sans-serif;
   --title-font: "Fira Sans Condensed", sans-serif;
+  // --title-font: "Nunito Sans", sans-serif;
+  // --title-font: "Inter", sans-serif;
+  // -------title-font: "Lato", sans-serif;
+  // -------title-font: "Libre Franklin", sans-serif;
+  // --title-font: "Montserrat", sans-serif;
 
   --primary-text-color: #212121;
   --secondary-text-color: #ffffff;
@@ -15,7 +20,7 @@
   --secondary-background-color: #191f32;
 
   --opacity-text-color: rgba(255, 255, 255, 0.6);
-
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   /* --card-set-gap: 30px; */
 
   /* --timing-function: cubic-bezier(0.4, 0, 0.2, 1); */

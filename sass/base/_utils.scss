@@ -17,7 +17,7 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+
   height: auto;
 }
 
@@ -92,6 +92,7 @@ p {
   padding: 15px 5px;
   align-items: center;
   display: flex;
+  transition: color 300ms var(--timing-function);
 
   &:hover,
   &:focus {
@@ -109,7 +110,7 @@ p {
   display: none;
   background-color: var(--secondary-text-color);
   color: var(--primary-text-color);
-  margin-top: 14px;
+
   padding: 0;
 
   // &:hover,
@@ -118,12 +119,17 @@ p {
   // }
 }
 
+.dropdown--mt14 {
+  margin-top: 14px;
+}
+
 .dropdown__link {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--primary-text-color);
   white-space: nowrap;
   padding: 10px 15px;
+  transition: background-color 300ms var(--timing-function);
 
   &:hover,
   &:focus {

@@ -12,6 +12,31 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -24,7 +49,10 @@
         <div class="topbar">
           <div class="topbar__quality">
             <svg class="quality-badge" width="40" height="40">
-              <use href="./images/sprite.svg#quality-badge"></use>
+              <use
+                class="quality-badge__svg"
+                href="./images/sprite.svg#quality-badge"
+              ></use>
             </svg>
             <a class="topbar__quality-link" href="#">
               TRUSTED HOSTING PROVIDER SINCE 2009
@@ -41,7 +69,7 @@
                 href="#"
                 >CONTACT US<span class="menu-arrow"></span
               ></a>
-              <ul class="navbar-dropdown dropdown__list">
+              <ul class="navbar-dropdown dropdown__list dropdown--mt14">
                 <li>
                   <a class="dropdown__link" href="#"
                     >OPEN A NEW SUPPORT TICKET</a
@@ -70,7 +98,7 @@
             </li> -->
 
             <li class="navbar__item">
-              <a class="dropdown__button topbar__button topbar__button--lang">
+              <a class="dropdown__button topbar__button button-lang">
                 <svg width="40" height="40">
                   <use
                     class="planet-icon"
@@ -79,7 +107,7 @@
                 </svg>
                 English <span class="menu-arrow"></span>
               </a>
-              <ul class="navbar-dropdown dropdown__list">
+              <ul class="navbar-dropdown dropdown__list button-lang__list">
                 <li>
                   <a class="dropdown__link" href="#">UA</a>
                 </li>
@@ -411,7 +439,7 @@
 
         <div class="container section hero__content">
           <h1 class="hero__title">
-            QUALITY HAS A NAME — VSYS HOST, THE TOP-NOTCH HOSTING PROVIDER
+            Quality has a name - Vsys Host, the top-notch hosting provider
           </h1>
 
           <div class="hero__box">
@@ -431,7 +459,7 @@
               </p>
 
               <div class="hero__buttons">
-                <a class="hero__button hero__button--white" href=""
+                <a class="hero__button hero__button--blue" href=""
                   >CHECK PRICING FOR USA DEDICATED SERVER</a
                 >
                 <button class="hero__button hero__button--blue">
@@ -459,13 +487,14 @@
           <div class="prices-container">
             <ul class="prices-menu">
               <li class="prices-menu__item">
-                <svg width="40" height="40">
-                  <use
-                    class="quaity-badge"
-                    href="./images/sprite.svg#quality-badge"
-                  ></use>
-                </svg>
-                <div>
+                <div class="prices-menu__img">
+                  <img
+                    class="prices-menu__svg"
+                    src="./images/images/dedicated-servers-price.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="prices-menu__content">
                   <p class="prices-menu__title">DEDICATED SERVERS</p>
                   <p class="prices-menu__info">
                     from <span class="prices-menu__price">$99 /month</span>
@@ -473,44 +502,47 @@
                 </div>
               </li>
               <li class="prices-menu__item">
-                <svg width="40" height="40">
-                  <use
-                    class="quaity-badge"
-                    href="./images/sprite.svg#quality-badge"
-                  ></use>
-                </svg>
-                <div>
-                  <p class="prices-menu__title">DEDICATED SERVERS</p>
+                <div class="prices-menu__img">
+                  <img
+                    class="prices-menu__svg"
+                    src="./images/images/storage-services-price.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="prices-menu__content">
+                  <p class="prices-menu__title">STORAGE SERVERS</p>
                   <p class="prices-menu__info">
-                    from <span class="prices-menu__price">$99 /month</span>
+                    from <span class="prices-menu__price">$249 /month</span>
                   </p>
                 </div>
               </li>
               <li class="prices-menu__item">
-                <svg width="40" height="40">
-                  <use
-                    class="quaity-badge"
-                    href="./images/sprite.svg#quality-badge"
-                  ></use>
-                </svg>
-                <div>
-                  <p class="prices-menu__title">DEDICATED SERVERS</p>
+                <div class="prices-menu__img">
+                  <img
+                    class="prices-menu__svg"
+                    src="./images/images/vps-price.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="prices-menu__content">
+                  <p class="prices-menu__title">VPS</p>
                   <p class="prices-menu__info">
-                    from <span class="prices-menu__price">$99 /month</span>
+                    from <span class="prices-menu__price">$18 /month</span>
                   </p>
                 </div>
               </li>
               <li class="prices-menu__item">
-                <svg width="40" height="40">
-                  <use
-                    class="quaity-badge"
-                    href="./images/sprite.svg#quality-badge"
-                  ></use>
-                </svg>
-                <div>
-                  <p class="prices-menu__title">DEDICATED SERVERS</p>
+                <div class="prices-menu__img">
+                  <img
+                    class="prices-menu__svg"
+                    src="./images/images/shared-hosting-price.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="prices-menu__content">
+                  <p class="prices-menu__title">SHARED HOSTING</p>
                   <p class="prices-menu__info">
-                    from <span class="prices-menu__price">$99 /month</span>
+                    from <span class="prices-menu__price">$5 /month</span>
                   </p>
                 </div>
               </li>
@@ -522,10 +554,47 @@
       <!-- Faq  -->
 
       <section class="faq">
+        <div class="faq-background"></div>
         <div class="section container">
           <h2 class="section-title">faq</h2>
 
           <div class="accordion">
+            <div class="accordion__item">
+              <button class="accordion__btn" type="button">
+                <h3 class="accordion__title">PRIVACY DRIVEN</h3>
+                <svg class="accordion__arrow" width="40px" height="40px">
+                  <use
+                    class="accordion__svg"
+                    href="/images/sprite.svg#big-arrow"
+                  ></use>
+                </svg>
+              </button>
+
+              <p class="accordion__info">
+                Privacy is fundamental human right. Best way to secure private
+                data is avoid sharing it online! We will never ask for any
+                privacy related data, just enter valid e-mail for communication.
+              </p>
+            </div>
+
+            <div class="accordion__item">
+              <button class="accordion__btn" type="button">
+                <h3 class="accordion__title">PRIVACY DRIVEN</h3>
+                <svg class="accordion__arrow" width="40px" height="40px">
+                  <use
+                    class="accordion__svg"
+                    href="/images/sprite.svg#big-arrow"
+                  ></use>
+                </svg>
+              </button>
+
+              <p class="accordion__info">
+                Privacy is fundamental human right. Best way to secure private
+                data is avoid sharing it online! We will never ask for any
+                privacy related data, just enter valid e-mail for communication.
+              </p>
+            </div>
+
             <div class="accordion__item">
               <button class="accordion__btn" type="button">
                 <h3 class="accordion__title">PRIVACY DRIVEN</h3>
@@ -609,7 +678,6 @@
         <a class="vsys-logo" href="#">
           <span class="vsys-logo__virtual">virtual </span>systems</a
         >
-
         <div class="footer__content">
           <div>
             <p class="footer__description">
@@ -673,6 +741,75 @@
               </ul>
             </div>
           </div>
+        </div>
+
+        <div class="xxx">
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><img src="./images/github-icon.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/linkedin-icon.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/facebook-icon.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/twitter-icon.svg" alt="" /></a>
+            </li>
+          </ul>
+
+          <ul class="footer__payment">
+            <h3 class="footer__subtitle">Payment system</h3>
+            <li class="footer__payment-item">
+              <a class="footer__payment-link" href="#"
+                ><img
+                  class="footer__payment-img"
+                  src="./images/./payment-bitcoin-icon.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a class="footer__payment-link" href="#"
+                ><img
+                  class="footer__payment-img"
+                  src="./images/./payment-paypal-icon.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a class="footer__payment-link" href="#"
+                ><img
+                  class="footer__payment-img"
+                  src="./images/./payment-bank-transfer-icon.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a class="footer__payment-link" href="#"
+                ><img
+                  class="footer__payment-img"
+                  src="./images/./payment-webmoney-icon.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a class="footer__payment-link" href="#"
+                ><img
+                  class="footer__payment-img"
+                  src="./images/./payment-visa-icon.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a class="footer__payment-link" href="#"
+                ><img
+                  class="footer__payment-img"
+                  src="./images/./payment-mastercard-icon.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
