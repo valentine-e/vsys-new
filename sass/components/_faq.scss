@@ -65,3 +65,9 @@
 .accordion__svg {
   fill: currentColor;
 }
+
+@media screen and (max-width: 1199px) {
+  .accordion {
+    width: 100%;
+  }
+}
