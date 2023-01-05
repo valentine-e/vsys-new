@@ -14,14 +14,14 @@
   border-bottom: 1px solid #747474;
 }
 
-.topbar__quality {
+.topbar-quality {
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
   width: 50%;
 }
 
-.topbar__quality-link {
+.topbar-quality__link {
   color: var(--secondary-text-color);
   border-bottom: 1px solid;
   position: relative;
@@ -37,7 +37,7 @@
   // }
 }
 
-.quality-badge__svg {
+.topbar-quality__svg {
   fill: transparent;
 }
 
@@ -53,7 +53,7 @@
   }
 }
 
-.topbar__list {
+.topbar-buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -163,7 +163,7 @@
 
 @media screen and (max-width: 1199px) {
   .topbar {
-    gap: 0%;
+    gap: 2%;
   }
 }
 

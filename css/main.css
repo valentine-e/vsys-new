@@ -166,24 +166,24 @@ p {
   border-bottom: 1px solid #747474;
 }
 
-.topbar__quality {
+.topbar-quality {
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
   width: 50%;
 }
 
-.topbar__quality-link {
+.topbar-quality__link {
   color: var(--secondary-text-color);
   border-bottom: 1px solid;
   position: relative;
   white-space: nowrap;
 }
-.topbar__quality-link:hover, .topbar__quality-link:focus {
+.topbar-quality__link:hover, .topbar-quality__link:focus {
   color: var(--light-blue-text);
 }
 
-.quality-badge__svg {
+.topbar-quality__svg {
   fill: transparent;
 }
 
@@ -198,7 +198,7 @@ p {
   fill: var(--light-blue-text);
 }
 
-.topbar__list {
+.topbar-buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -296,7 +296,7 @@ p {
 
 @media screen and (max-width: 1199px) {
   .topbar {
-    gap: 0%;
+    gap: 2%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -355,7 +355,7 @@ p {
   padding-bottom: 20px;
 }
 
-.hero__buttons {
+.hero__button {
   display: flex;
   gap: 20px;
 }
@@ -416,12 +416,12 @@ p {
   .hero__info {
     width: 100%;
   }
-  .hero__buttons {
+  .hero__button {
     gap: 80px;
     justify-content: center;
   }
 }
-.prices-container {
+.prices__container {
   position: relative;
 }
 
@@ -639,27 +639,27 @@ p {
   font-size: 18px;
 }
 
-.footer__socials {
+.footer-social__list {
   min-width: 25%;
   display: flex;
   justify-content: space-between;
 }
 
-.footer__payment {
+.footer-payment {
   display: flex;
   min-width: 45%;
   justify-content: space-between;
   align-items: center;
 }
 
-.xxx {
+.footer-info {
   display: flex;
   justify-content: space-between;
   gap: 30%;
   margin-top: 30px;
 }
 
-.footer__payment-link {
+.footer-payment__link {
   width: 70px;
   height: 40px;
   background-color: var(--primary-background-color);
@@ -668,11 +668,11 @@ p {
   border-radius: 4px;
 }
 
-.footer__payment-img {
+.footer-payment__img {
   margin: 0 auto;
 }
 
-.footer__payment > .footer__subtitle {
+.footer-payment > .footer__subtitle {
   width: 70px;
   align-items: center;
 }
@@ -689,25 +689,25 @@ p {
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  .xxx {
+  .footer-info {
     gap: 15%;
   }
-  .footer__payment {
+  .footer-payment {
     width: 100%;
   }
-  .footer__payment .footer__subtitle {
+  .footer-payment .footer__subtitle {
     display: none;
   }
 }
 @media screen and (max-width: 767px) {
-  .xxx {
+  .footer-info {
     flex-flow: column;
     gap: 30px;
   }
-  .footer__payment {
+  .footer-payment {
     width: 100%;
   }
-  .footer__socials {
+  .footer-social__list {
     width: 50%;
   }
 }/*# sourceMappingURL=main.css.map */
