@@ -175,9 +175,11 @@ p {
 
 .topbar-quality__link {
   color: var(--secondary-text-color);
-  border-bottom: 1px solid;
   position: relative;
   white-space: nowrap;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
 }
 .topbar-quality__link:hover, .topbar-quality__link:focus {
   color: var(--light-blue-text);
@@ -192,10 +194,7 @@ p {
 }
 
 .big-arrow {
-  fill: var(--secondary-text-color);
-}
-.big-arrow:hover {
-  fill: var(--light-blue-text);
+  fill: currentColor;
 }
 
 .topbar-buttons {
@@ -355,7 +354,7 @@ p {
   padding-bottom: 20px;
 }
 
-.hero__button {
+.hero__buttons {
   display: flex;
   gap: 20px;
 }
@@ -400,6 +399,26 @@ p {
   background-color: var(--primary-background-color);
 }
 
+.slider__viewbox {
+  overflow: hidden;
+}
+
+.slider-content {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 300ms var(--timing-function);
+}
+
+.slider__container {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slider__controls {
+  position: relative;
+  z-index: 1;
+}
+
 @media screen and (max-width: 1199px) {
   .hero__thumb {
     display: flex;
@@ -416,7 +435,7 @@ p {
   .hero__info {
     width: 100%;
   }
-  .hero__button {
+  .hero__buttons {
     gap: 80px;
     justify-content: center;
   }

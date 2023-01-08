@@ -23,9 +23,11 @@
 
 .topbar-quality__link {
   color: var(--secondary-text-color);
-  border-bottom: 1px solid;
   position: relative;
   white-space: nowrap;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
 
   &:hover,
   &:focus {
@@ -46,11 +48,7 @@
 }
 
 .big-arrow {
-  fill: var(--secondary-text-color);
-
-  &:hover {
-    fill: var(--light-blue-text);
-  }
+  fill: currentColor;
 }
 
 .topbar-buttons {

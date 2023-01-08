@@ -2,24 +2,34 @@ const sliderContent = document.querySelector(".slider-content");
 const leftBtn = document.querySelector("#left");
 const rightBtn = document.querySelector("#right");
 
-// let settings = {
-//   padding: 20,
-// };
-
 leftBtn.addEventListener("click", moveLeft);
 rightBtn.addEventListener("click", moveRight);
 
 let currentPosition = 0;
-let currentPadding = 0;
+const countSlides = sliderContent.children.length;
 
 function moveLeft() {
-  currentPosition -= 100;
-  currentPadding -= settings.padding;
-  ul.style.transform = `translateX(calc(${currentPosition}% + ${currentPadding}px))`;
+  if (currentPosition > -((countSlides - 1) * 100)) {
+    currentPosition -= 100;
+  }
+  sliderContent.style.transform = `translateX(${currentPosition}%)`;
 }
 
 function moveRight() {
-  currentPosition += 100;
-  currentPadding += settings.padding;
-  ul.style.transform = `translateX(calc(${currentPosition}% + ${currentPadding}px))`;
+  if (currentPosition < 0) {
+    currentPosition += 100;
+  }
+  sliderContent.style.transform = `translateX(${currentPosition}%)`;
 }
+
+// setInterval(autoScroll, 2000);
+
+// function autoScroll() {
+//   if (!(currentPosition > -((countSlides - 1) * 100))) {
+//     currentPosition = 0;
+//     sliderContent.style.transform = `translateX(${currentPosition}%)`;
+//     return;
+//   }
+
+//   moveLeft();
+// }
