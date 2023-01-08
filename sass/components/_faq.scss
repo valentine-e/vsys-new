@@ -30,7 +30,7 @@
   padding: 10px 0;
 
   &:focus + .accordion__info {
-    max-height: max-content;
+    max-height: 2rem;
   }
 
   &:focus > .accordion__arrow {
@@ -48,12 +48,13 @@
 
 .accordion__info {
   color: var(--grey-text-color);
-  max-height: 0;
+  max-height: 0rem;
   overflow: hidden;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.25;
   margin-bottom: 10px;
+  transition: max-height 300ms var(--timing-function);
 }
 
 .accordion__arrow {
