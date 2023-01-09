@@ -54,7 +54,7 @@
 .hero__description {
   color: var(--secondary-text-color);
   font-size: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .hero__buttons {
@@ -155,7 +155,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .hero-buttons {
+  .hero__buttons {
     flex-flow: column;
   }
+}
+
+.slider__controls {
+  display: none;
 }
