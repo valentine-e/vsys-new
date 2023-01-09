@@ -52,9 +52,9 @@ p {
   }
 }
 
-.section {
-  padding: 60px 0;
-}
+// .section {
+//   padding: 60px 0;
+// }
 
 .section-title {
   text-transform: uppercase;
@@ -106,18 +106,11 @@ p {
   position: absolute;
   top: 100%;
   left: 0;
-  // border-radius: 0 0 8px 8px;
-  // padding: 10px;
   display: none;
   background-color: var(--secondary-text-color);
   color: var(--primary-text-color);
 
   padding: 0;
-
-  // &:hover,
-  // &:focus {
-  //   border-radius: 0 0 8px 8px;
-  // }
 }
 
 .dropdown--mt14 {

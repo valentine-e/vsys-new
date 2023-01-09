@@ -33,10 +33,6 @@
   &:focus {
     color: var(--light-blue-text);
   }
-
-  // &:hover > .big-arrow {
-  //   fill: var(--light-blue-text);
-  // }
 }
 
 .topbar-quality__svg {
@@ -116,7 +112,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0 15px 15px;
+  padding: 15px 0 15px 0;
 }
 
 .navbar__list {
@@ -131,11 +127,12 @@
 }
 
 .vsys-logo {
-  font-family: var(--title-font);
+  font-family: var(--logo-font);
   text-transform: uppercase;
   color: #ffffff;
   font-size: 16px;
   position: relative;
+  white-space: nowrap;
 }
 
 .vsys-logo--christmas-hat {
@@ -147,7 +144,7 @@
     top: -25px;
     width: 50px;
     height: 54px;
-    background-image: url(/images/for-sprite-delete/christmas-hat.svg);
+    // background-image: url(/images/for-sprite-delete/christmas-hat.svg);
   }
 }
 
@@ -155,13 +152,13 @@
   color: #4aa7f0;
 }
 
-// .lang__list {
-
-// }
+.menu-button {
+  display: none;
+}
 
 @media screen and (max-width: 1199px) {
   .topbar {
-    gap: 2%;
+    gap: 5%;
   }
 }
 
@@ -169,4 +166,24 @@
   .topbar {
     gap: 30%;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .topbar {
+    display: none;
+  }
+
+  .menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+    color: aliceblue;
+  }
+}
+
+.slider__controls {
+  display: none;
 }

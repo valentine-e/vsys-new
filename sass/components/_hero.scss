@@ -7,7 +7,8 @@
     #4aa7f0 97.41%
   );
   & .section {
-    padding: 60px 0 200px 0;
+    padding-top: 40px;
+    padding-bottom: 200px;
   }
 }
 
@@ -33,7 +34,7 @@
   font-size: 40px;
   line-height: 1.3;
   width: 100%;
-
+  letter-spacing: 2px;
   margin-bottom: 40px;
   text-transform: uppercase;
 
@@ -72,8 +73,11 @@
 }
 
 .hero__button {
+  font-family: var(--buttons-font);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 15px 20px;
   border-radius: 10px;
   white-space: nowrap;
@@ -147,5 +151,11 @@
   .hero__buttons {
     gap: 80px;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-buttons {
+    flex-flow: column;
   }
 }

@@ -12,13 +12,13 @@
       rel="stylesheet"
     />
 
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap"
       rel="stylesheet"
     />
 
@@ -32,10 +32,10 @@
       rel="stylesheet"
     /> -->
 
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
 
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -145,291 +145,316 @@
             <span class="vsys-logo__virtual">virtual </span>systems</a
           >
 
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a class="dropdown__list dropdown__button" href="#"
-                >Servers<span class="menu-arrow"></span
-              ></a>
-              <ul class="navbar-dropdown">
-                <li>
-                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#"
-                    >SERVERS IN THE NETHERLANDS</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">GPU SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
-                </li>
-              </ul>
-            </li>
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-close"
+                href="images/sprite.svg#header-menu-close-icon"
+              ></use>
+              <use
+                class="icon-menu"
+                href="images/sprite.svg#header-menu-icon"
+              ></use>
+            </svg>
+          </button>
 
-            <li class="navbar__item">
-              <a class="dropdown__list dropdown__button" href="#"
-                >VPS<span class="menu-arrow"></span
-              ></a>
-              <ul class="navbar-dropdown">
-                <li>
-                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#"
-                    >SERVERS IN THE NETHERLANDS</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">GPU SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
-                </li>
-              </ul>
-            </li>
+          <div class="mobile-menu" id="mobile-menu" data-menu>
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a class="dropdown__list dropdown__button" href="#"
+                  >Servers<span class="menu-arrow"></span
+                ></a>
+                <ul class="navbar-dropdown">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
 
-            <li class="navbar__item">
-              <a class="dropdown__list dropdown__button" href="#">HOSTING</a>
-            </li>
+              <li class="navbar__item">
+                <a class="dropdown__list dropdown__button" href="#"
+                  >VPS<span class="menu-arrow"></span
+                ></a>
+                <ul class="navbar-dropdown">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
 
-            <li class="navbar__item">
-              <a class="dropdown__list dropdown__button" href="#"
-                >Cloud<span class="menu-arrow"></span
-              ></a>
-              <ul class="navbar-dropdown">
-                <li>
-                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#"
-                    >SERVERS IN THE NETHERLANDS</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">GPU SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
-                </li>
-              </ul>
-            </li>
+              <li class="navbar__item">
+                <a class="dropdown__list dropdown__button" href="#">HOSTING</a>
+              </li>
 
-            <li class="navbar__item">
-              <a class="dropdown__list dropdown__button" href="#"
-                >Services<span class="menu-arrow"></span
-              ></a>
-              <ul class="navbar-dropdown">
-                <li>
-                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#"
-                    >SERVERS IN THE NETHERLANDS</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">GPU SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
-                </li>
-              </ul>
-            </li>
+              <li class="navbar__item">
+                <a class="dropdown__list dropdown__button" href="#"
+                  >Cloud<span class="menu-arrow"></span
+                ></a>
+                <ul class="navbar-dropdown">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
 
-            <li class="navbar__item">
-              <a class="dropdown__list dropdown__button" href="#"
-                >Solutions<span class="menu-arrow"></span
-              ></a>
-              <ul class="navbar-dropdown">
-                <li>
-                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#"
-                    >SERVERS IN THE NETHERLANDS</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">GPU SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
-                </li>
-              </ul>
-            </li>
+              <li class="navbar__item">
+                <a class="dropdown__list dropdown__button" href="#"
+                  >Services<span class="menu-arrow"></span
+                ></a>
+                <ul class="navbar-dropdown">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
 
-            <li class="navbar__item">
-              <a class="dropdown__list dropdown__button" href="#"
-                >Company<span class="menu-arrow"></span
-              ></a>
-              <ul class="navbar-dropdown">
-                <li>
-                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#"
-                    >SERVERS IN THE NETHERLANDS</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">GPU SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
-                </li>
-              </ul>
-            </li>
+              <li class="navbar__item">
+                <a class="dropdown__list dropdown__button" href="#"
+                  >Solutions<span class="menu-arrow"></span
+                ></a>
+                <ul class="navbar-dropdown">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
 
-            <li class="navbar__item">
-              <a class="dropdown__list dropdown__button" href="#"
-                >Recources<span class="menu-arrow"></span
-              ></a>
-              <ul class="navbar-dropdown">
-                <li>
-                  <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#"
-                    >SERVERS IN THE NETHERLANDS</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STREAMING SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">GPU SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">STORAGE SERVERS</a>
-                </li>
-                <li>
-                  <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+              <li class="navbar__item">
+                <a class="dropdown__list dropdown__button" href="#"
+                  >Company<span class="menu-arrow"></span
+                ></a>
+                <ul class="navbar-dropdown">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navbar__item">
+                <a class="dropdown__list dropdown__button" href="#"
+                  >Recources<span class="menu-arrow"></span
+                ></a>
+                <ul class="navbar-dropdown">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -447,7 +472,52 @@
         <div class="container section">
           <div class="slider__viewbox">
             <ul class="slider-content">
-              <li class="fs-0 slider__container">
+              <li class="slider__container">
+                <div class="hero__content">
+                  <h1 class="hero__title">
+                    Quality has a name - Vsys Host, <br />
+                    the top-notch hosting provider
+                  </h1>
+
+                  <div class="hero__thumb">
+                    <div class="hero__info">
+                      <p class="hero__description">
+                        VSYS Host operates in Kyiv, Seattle, and Amsterdam's
+                        top-tier data centers. 99.9% uptime guaranteed, DDoS
+                        protection, low latency, and packet loss. Shared
+                        hosting, VPS, dedicated server, cloud solution, GPU, or
+                        streaming server, significant data storage, 10Gbps, or
+                        bare metal beast - crypto payments are welcome.
+                        <br /><br />
+                        Ticket response time:
+                        <span class="text--blue">15 minutes</span><br />
+                        Uptime of our servers:
+                        <span class="text--blue">99.9% </span><br />Payments:
+                      </p>
+
+                      <div class="hero__buttons">
+                        <a class="hero__button hero__button--blue" href=""
+                          >CHECK PRICING FOR USA DEDICATED SERVER</a
+                        >
+                        <button class="hero__button hero__button--blue">
+                          CONTACT SALES TEAM
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="hero__image">
+                      <img
+                        width="222px"
+                        class="hero__svg"
+                        src="./images/balancing-blue.svg"
+                        alt="Server illustration"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider__container">
                 <div class="hero__content">
                   <h1 class="hero__title">
                     Quality has a name - Vsys Host, the top-notch hosting
@@ -492,52 +562,7 @@
                 </div>
               </li>
 
-              <li class="fs-0 slider__container">
-                <div class="hero__content">
-                  <h1 class="hero__title">
-                    Quality has a name - Vsys Host, the top-notch hosting
-                    provider
-                  </h1>
-
-                  <div class="hero__thumb">
-                    <div class="hero__info">
-                      <p class="hero__description">
-                        VSYS Host operates in Kyiv, Seattle, and Amsterdam's
-                        top-tier data centers. 99.9% uptime guaranteed, DDoS
-                        protection, low latency, and packet loss. Shared
-                        hosting, VPS, dedicated server, cloud solution, GPU, or
-                        streaming server, significant data storage, 10Gbps, or
-                        bare metal beast - crypto payments are welcome.
-                        <br /><br />
-                        Ticket response time:
-                        <span class="text--blue">15 minutes</span><br />
-                        Uptime of our servers:
-                        <span class="text--blue">99.9% </span><br />Payments:
-                      </p>
-
-                      <div class="hero__buttons">
-                        <a class="hero__button hero__button--blue" href=""
-                          >CHECK PRICING FOR USA DEDICATED SERVER</a
-                        >
-                        <button class="hero__button hero__button--blue">
-                          CONTACT SALES TEAM
-                        </button>
-                      </div>
-                    </div>
-
-                    <div class="hero__image">
-                      <img
-                        width="222px"
-                        class="hero__svg"
-                        src="./images/balancing-blue.svg"
-                        alt="Server illustration"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li class="fs-0 slider__container">
+              <li class="slider__container">
                 <div class="hero__content">
                   <h1 class="hero__title">
                     Quality has a name - Vsys Host, the top-notch hosting
@@ -924,5 +949,6 @@
 
     <script src="./js/dropdown.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
