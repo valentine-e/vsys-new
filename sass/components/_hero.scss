@@ -152,6 +152,10 @@
     gap: 80px;
     justify-content: center;
   }
+
+  .hero__title--nowrap {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
