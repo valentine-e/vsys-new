@@ -96,6 +96,26 @@ p {
   width: 30%;
 }
 
+.btn-grad {
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #144da4;
+  white-space: nowrap;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 1s;
+  place-content: center;
+}
+
+.btn-grad:hover,
+.btn-grad:focus {
+  background: linear-gradient(180deg, #144da4, transparent) #4aa7f0;
+  color: #fff;
+}
+
 :root {
   --primary-font: "IBM Plex Sans", sans-serif;
   --logo-font: "Fira Sans Condensed", sans-serif;
@@ -151,6 +171,10 @@ p {
 }
 .topbar-quality__link:hover, .topbar-quality__link:focus {
   color: var(--light-blue-text);
+}
+
+.topbar-quality__title {
+  margin-right: 6px;
 }
 
 .topbar-quality__svg {
@@ -614,6 +638,7 @@ input[type=radio] {
 .services-cards__item {
   width: 25%;
   padding: 20px 20px;
+  border-radius: 15px;
 }
 .services-cards__item:hover {
   filter: drop-shadow(0px 5px 11px rgba(0, 0, 0, 0.25));
@@ -671,16 +696,6 @@ input[type=radio] {
   width: 100%;
 }
 
-.services-cards__button {
-  text-align: center;
-  border-radius: 15px;
-  text-transform: uppercase;
-  font-size: 12px;
-  white-space: nowrap;
-  padding: 15px 20px;
-  margin-top: 20px;
-}
-
 .services-cards__button--white {
   font-family: var(--buttons-font);
   color: var(--primary-background-color);
@@ -713,6 +728,31 @@ input[type=radio] {
 .services-dedicated__description {
   color: var(--primary-text-color);
   font-size: 14px;
+}
+
+.services-vps__list {
+  gap: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-vps__item {
+  width: 25%;
+}
+
+.services-vps__link {
+  text-align: center;
+  width: 100%;
+  color: var(--accent-color);
+  outline: 1px solid var(--accent-color);
+  border-radius: 15px;
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+.services-vps__link:hover {
+  background: linear-gradient(180deg, #144da4, transparent) #4aa7f0;
+  color: var(--secondary-text-color);
+  outline: none;
 }
 
 .faq {

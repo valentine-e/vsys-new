@@ -97,3 +97,49 @@ p {
 .services-dedicated__item {
   width: 30%;
 }
+
+// .btn-grad {
+//   background-image: linear-gradient(
+//     to right,
+//     #191f32 0%,
+//     #2380c9 51%,
+//     #191f32 100%
+//   );
+//   font-size: 12px;
+//   text-align: center;
+//   padding: 10px 20px;
+//   text-transform: uppercase;
+//   transition: 0.5s;
+//   background-size: 200% auto;
+//   color: white;
+//   box-shadow: 0 0 20px #eee;
+//   border-radius: 15px;
+//   display: block;
+//   white-space: nowrap;
+// }
+
+// .btn-grad:hover {
+//   background-position: right center; /* change the direction of the change here */
+//   color: #fff;
+//   text-decoration: none;
+// }
+
+.btn-grad {
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: #144da4;
+  white-space: nowrap;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 1s;
+  place-content: center;
+}
+.btn-grad:hover,
+.btn-grad:focus {
+  background: linear-gradient(180deg, #144da4, transparent) #4aa7f0;
+
+  color: #fff;
+}
