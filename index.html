@@ -481,7 +481,7 @@
                         bare metal beast - crypto payments are welcome.
                         <br /><br />
                         Ticket response time:
-                        <span class="text--lightblue">15 minutes</span><br />
+                        <span class="text--lightwhite">15 minutes</span><br />
                         Uptime of our servers:
                         <span class="text--lightblue">99.9% </span
                         ><br />Payments:
@@ -605,73 +605,414 @@
         </div>
       </section>
 
-      <!-- Prices  -->
+      <!-- Services  -->
 
-      <section class="prices">
+      <section class="services">
         <div class="container">
-          <div class="prices__container">
-            <ul class="prices-menu">
-              <li class="prices-menu__item">
-                <div class="prices-menu__img">
-                  <img
-                    class="prices-menu__svg"
-                    src="./images/images/dedicated-servers-price.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="prices-menu__content">
-                  <p class="prices-menu__title">DEDICATED SERVERS</p>
-                  <p class="prices-menu__info">
-                    from <span class="prices-menu__price">$99 /month</span>
-                  </p>
-                </div>
+          <div class="services__container">
+            <ul class="services-menu">
+              <li class="services-menu__item">
+                <input
+                  checked
+                  type="radio"
+                  name="services_menu_toggle"
+                  id="servers_button"
+                  class="services-menu__button"
+                />
+                <label for="input_description" class="services-menu__label"
+                  >Servers</label
+                >
               </li>
-              <li class="prices-menu__item">
-                <div class="prices-menu__img">
-                  <img
-                    class="prices-menu__svg"
-                    src="./images/images/storage-services-price.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="prices-menu__content">
-                  <p class="prices-menu__title">STORAGE SERVERS</p>
-                  <p class="prices-menu__info">
-                    from <span class="prices-menu__price">$249 /month</span>
-                  </p>
-                </div>
+
+              <li class="services-menu__item">
+                <input
+                  type="radio"
+                  name="services_menu_toggle"
+                  id="hosting_button"
+                  class="services-menu__button"
+                />
+                <label for="input_description" class="services-menu__label"
+                  >Hosting</label
+                >
+                <div id="hostingContent">Hosting</div>
               </li>
-              <li class="prices-menu__item">
-                <div class="prices-menu__img">
-                  <img
-                    class="prices-menu__svg"
-                    src="./images/images/vps-price.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="prices-menu__content">
-                  <p class="prices-menu__title">VPS</p>
-                  <p class="prices-menu__info">
-                    from <span class="prices-menu__price">$18 /month</span>
-                  </p>
-                </div>
+
+              <li class="services-menu__item">
+                <input
+                  type="radio"
+                  name="services_menu_toggle"
+                  id="cloud_button"
+                  class="services-menu__button"
+                />
+                <label for="input_description" class="services-menu__label"
+                  >Cloud</label
+                >
+                <div id="cloudContent">Cloud</div>
               </li>
-              <li class="prices-menu__item">
-                <div class="prices-menu__img">
-                  <img
-                    class="prices-menu__svg"
-                    src="./images/images/shared-hosting-price.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="prices-menu__content">
-                  <p class="prices-menu__title">SHARED HOSTING</p>
-                  <p class="prices-menu__info">
-                    from <span class="prices-menu__price">$5 /month</span>
-                  </p>
-                </div>
+
+              <li class="services-menu__item">
+                <input
+                  type="radio"
+                  name="services_menu_toggle"
+                  id="services_button"
+                  class="services-menu__button"
+                />
+                <label for="input_description" class="services-menu__label"
+                  >Services</label
+                >
+                <div id="servicesContent">Services</div>
               </li>
             </ul>
+
+            <div class="services-cards" id="serversContent">
+              <ul class="services-cards__list">
+                <li class="services-cards__item services-cards__item--blue">
+                  <h3 class="services-cards__title">Pro 10G</h3>
+                  <p class="services-cards__price">849$/month</p>
+
+                  <p class="services-cards__info">
+                    CPU<span class="services-cards__value"
+                      >Dual E5-2620V3 (12×2.4GHZ)</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    RAM<span class="services-cards__value">32GB DDR4</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Drive<span class="services-cards__value">250GB SSD</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Port<span class="services-cards__value">1×10 Gbps</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Bandwitch<span class="services-cards__value"
+                      >10 Gbps Unlimited</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    Root access<span class="services-cards__value"
+                      >SSH, Panel</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    IPv4/IPv6<span class="services-cards__value">/32 /64</span>
+                  </p>
+                  <p class="services-cards__info">
+                    IPMI<span class="services-cards__value">v.2</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Free OS Install<span class="services-cards__value">+</span>
+                  </p>
+                  <p class="services-cards__info">
+                    24x7 Support<span class="services-cards__value">+</span>
+                  </p>
+
+                  <a
+                    href="#"
+                    class="services-cards__button services-cards__button--white"
+                    >10 GBPS SERVER CONFIGURE</a
+                  >
+                </li>
+
+                <li class="services-cards__item services-cards__item--blue">
+                  <h3 class="services-cards__title">Pro 10G</h3>
+                  <p class="services-cards__price">849$/month</p>
+
+                  <p class="services-cards__info">
+                    CPU<span class="services-cards__value"
+                      >Dual E5-2620V3 (12×2.4GHZ)</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    RAM<span class="services-cards__value">32GB DDR4</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Drive<span class="services-cards__value">250GB SSD</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Port<span class="services-cards__value">1×10 Gbps</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Bandwitch<span class="services-cards__value"
+                      >10 Gbps Unlimited</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    Root access<span class="services-cards__value"
+                      >SSH, Panel</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    IPv4/IPv6<span class="services-cards__value">/32 /64</span>
+                  </p>
+                  <p class="services-cards__info">
+                    IPMI<span class="services-cards__value">v.2</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Free OS Install<span class="services-cards__value">+</span>
+                  </p>
+                  <p class="services-cards__info">
+                    24x7 Support<span class="services-cards__value">+</span>
+                  </p>
+
+                  <a
+                    href="#"
+                    class="services-cards__button services-cards__button--white"
+                    >10 GBPS SERVER CONFIGURE</a
+                  >
+                </li>
+
+                <li class="services-cards__item services-cards__item--white">
+                  <h3 class="services-cards__title">Pro 10G</h3>
+                  <p class="services-cards__price">849$/month</p>
+
+                  <p class="services-cards__info">
+                    CPU<span class="services-cards__value"
+                      >Dual E5-2620V3 (12×2.4GHZ)</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    RAM<span class="services-cards__value">32GB DDR4</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Drive<span class="services-cards__value">250GB SSD</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Port<span class="services-cards__value">1×10 Gbps</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Bandwitch<span class="services-cards__value"
+                      >10 Gbps Unlimited</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    Root access<span class="services-cards__value"
+                      >SSH, Panel</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    IPv4/IPv6<span class="services-cards__value">/32 /64</span>
+                  </p>
+                  <p class="services-cards__info">
+                    IPMI<span class="services-cards__value">v.2</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Free OS Install<span class="services-cards__value">+</span>
+                  </p>
+                  <p class="services-cards__info">
+                    24x7 Support<span class="services-cards__value">+</span>
+                  </p>
+
+                  <a
+                    href="#"
+                    class="services-cards__button services-cards__button--white"
+                    >10 GBPS SERVER CONFIGURE</a
+                  >
+                </li>
+
+                <li class="services-cards__item services-cards__item--white">
+                  <h3 class="services-cards__title">Pro 10G</h3>
+                  <p class="services-cards__price">849$/month</p>
+
+                  <p class="services-cards__info">
+                    CPU<span class="services-cards__value"
+                      >Dual E5-2620V3 (12×2.4GHZ)</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    RAM<span class="services-cards__value">32GB DDR4</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Drive<span class="services-cards__value">250GB SSD</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Port<span class="services-cards__value">1×10 Gbps</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Bandwitch<span class="services-cards__value"
+                      >10 Gbps Unlimited</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    Root access<span class="services-cards__value"
+                      >SSH, Panel</span
+                    >
+                  </p>
+                  <p class="services-cards__info">
+                    IPv4/IPv6<span class="services-cards__value">/32 /64</span>
+                  </p>
+                  <p class="services-cards__info">
+                    IPMI<span class="services-cards__value">v.2</span>
+                  </p>
+                  <p class="services-cards__info">
+                    Free OS Install<span class="services-cards__value">+</span>
+                  </p>
+                  <p class="services-cards__info">
+                    24x7 Support<span class="services-cards__value">+</span>
+                  </p>
+
+                  <a
+                    href="#"
+                    class="services-cards__button services-cards__button--white"
+                    >10 GBPS SERVER CONFIGURE</a
+                  >
+                </li>
+              </ul>
+
+              <h2 class="section-title">Dedicated Servers</h2>
+
+              <ul class="services-dedicated__list">
+                <li class="services-dedicated__item">
+                  <a href="#">
+                    <h3 class="services-dedicated__title">
+                      UKRAINE DEDICATED SERVERS
+                      <span class="menu-arrow menu-arrow--right"></span>
+                    </h3>
+                    <p class="services-dedicated__description">
+                      Customizable dedicated servers located at a Tier III data
+                      center in Kyiv, Ukraine, with outstanding connectivity to
+                      Asia and the Middle East. 24/7 professional technical
+                      support, unmetered bandwidth, SLA guarantee, and flawless
+                      company reputation over a decade.
+                    </p></a
+                  >
+                </li>
+
+                <li class="services-dedicated__item">
+                  <a href="#">
+                    <h3 class="services-dedicated__title">
+                      UKRAINE DEDICATED SERVERS
+                      <span class="menu-arrow menu-arrow--right"></span>
+                    </h3>
+                    <p class="services-dedicated__description">
+                      Customizable dedicated servers located at a Tier III data
+                      center in Kyiv, Ukraine, with outstanding connectivity to
+                      Asia and the Middle East. 24/7 professional technical
+                      support, unmetered bandwidth, SLA guarantee, and flawless
+                      company reputation over a decade.
+                    </p></a
+                  >
+                </li>
+
+                <li class="services-dedicated__item">
+                  <a href="#">
+                    <h3 class="services-dedicated__title">
+                      UKRAINE DEDICATED SERVERS
+                      <span class="menu-arrow menu-arrow--right"></span>
+                    </h3>
+                    <p class="services-dedicated__description">
+                      Customizable dedicated servers located at a Tier III data
+                      center in Kyiv, Ukraine, with outstanding connectivity to
+                      Asia and the Middle East. 24/7 professional technical
+                      support, unmetered bandwidth, SLA guarantee, and flawless
+                      company reputation over a decade.
+                    </p></a
+                  >
+                </li>
+
+                <li class="services-dedicated__item">
+                  <a href="#">
+                    <h3 class="services-dedicated__title">
+                      UKRAINE DEDICATED SERVERS
+                      <span class="menu-arrow menu-arrow--right"></span>
+                    </h3>
+                    <p class="services-dedicated__description">
+                      Customizable dedicated servers located at a Tier III data
+                      center in Kyiv, Ukraine, with outstanding connectivity to
+                      Asia and the Middle East. 24/7 professional technical
+                      support, unmetered bandwidth, SLA guarantee, and flawless
+                      company reputation over a decade.
+                    </p></a
+                  >
+                </li>
+
+                <li class="services-dedicated__item">
+                  <a href="#">
+                    <h3 class="services-dedicated__title">
+                      UKRAINE DEDICATED SERVERS
+                      <span class="menu-arrow menu-arrow--right"></span>
+                    </h3>
+                    <p class="services-dedicated__description">
+                      Customizable dedicated servers located at a Tier III data
+                      center in Kyiv, Ukraine, with outstanding connectivity to
+                      Asia and the Middle East. 24/7 professional technical
+                      support, unmetered bandwidth, SLA guarantee, and flawless
+                      company reputation over a decade.
+                    </p></a
+                  >
+                </li>
+
+                <li class="services-dedicated__item">
+                  <a href="#">
+                    <h3 class="services-dedicated__title">
+                      UKRAINE DEDICATED SERVERS
+                      <span class="menu-arrow menu-arrow--right"></span>
+                    </h3>
+                    <p class="services-dedicated__description">
+                      Customizable dedicated servers located at a Tier III data
+                      center in Kyiv, Ukraine, with outstanding connectivity to
+                      Asia and the Middle East. 24/7 professional technical
+                      support, unmetered bandwidth, SLA guarantee, and flawless
+                      company reputation over a decade.
+                    </p></a
+                  >
+                </li>
+
+                <li class="services-dedicated__item">
+                  <a href="#">
+                    <h3 class="services-dedicated__title">
+                      UKRAINE DEDICATED SERVERS
+                      <span class="menu-arrow menu-arrow--right"></span>
+                    </h3>
+                    <p class="services-dedicated__description">
+                      Customizable dedicated servers located at a Tier III data
+                      center in Kyiv, Ukraine, with outstanding connectivity to
+                      Asia and the Middle East. 24/7 professional technical
+                      support, unmetered bandwidth, SLA guarantee, and flawless
+                      company reputation over a decade.
+                    </p></a
+                  >
+                </li>
+
+                <li class="services-dedicated__item">
+                  <a href="#">
+                    <h3 class="services-dedicated__title">
+                      UKRAINE DEDICATED SERVERS
+                      <span class="menu-arrow menu-arrow--right"></span>
+                    </h3>
+                    <p class="services-dedicated__description">
+                      Customizable dedicated servers located at a Tier III data
+                      center in Kyiv, Ukraine, with outstanding connectivity to
+                      Asia and the Middle East. 24/7 professional technical
+                      support, unmetered bandwidth, SLA guarantee, and flawless
+                      company reputation over a decade.
+                    </p></a
+                  >
+                </li>
+
+                <li class="services-dedicated__item">
+                  <a href="#">
+                    <h3 class="services-dedicated__title">
+                      UKRAINE DEDICATED SERVERS
+                      <span class="menu-arrow menu-arrow--right"></span>
+                    </h3>
+                    <p class="services-dedicated__description">
+                      Customizable dedicated servers located at a Tier III data
+                      center in Kyiv, Ukraine, with outstanding connectivity to
+                      Asia and the Middle East. 24/7 professional technical
+                      support, unmetered bandwidth, SLA guarantee, and flawless
+                      company reputation over a decade.
+                    </p></a
+                  >
+                </li>
+              </ul>
+
+              <h2 class="section-title">VPS</h2>
+
+              <ul>
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

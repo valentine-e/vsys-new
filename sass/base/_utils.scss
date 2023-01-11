@@ -84,4 +84,16 @@ p {
   background: -webkit-linear-gradient(#333d5e, #4aa7f0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin: 60px 0;
+}
+
+.services-dedicated__list {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  row-gap: 40px;
+}
+
+.services-dedicated__item {
+  width: 30%;
 }
