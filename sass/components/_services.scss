@@ -12,10 +12,6 @@
   display: block;
 }
 
-.services__container {
-  position: relative;
-}
-
 input[type="radio"] {
   opacity: 0;
   position: absolute;
@@ -25,9 +21,54 @@ input[type="radio"] {
   margin: 0;
 }
 
+.services__container {
+  padding-top: 100px;
+  position: relative;
+}
+
 .services-menu {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 5%;
+  position: absolute;
+  transform: translateY(-100%);
+
+  top: 0;
+  left: 0;
+}
+
+.services-menu__item {
+  width: 25%;
+  border-radius: 15px 15px 0 0;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.services-menu__item:has(.services-menu__button:checked) {
+  background-color: var(--secondary-text-color);
+}
+
+.services-menu__label {
+  font-family: var(--title-font);
+  color: var(--secondary-text-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+
+.menu-arrow--big {
+  border-top: 6px dashed;
+  border-top: 6px solid\9;
+  border-right: 6px solid rgba(0, 0, 0, 0);
+  border-left: 6px solid rgba(0, 0, 0, 0);
 }
 
 .services-cards__list {
