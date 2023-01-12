@@ -87,17 +87,6 @@ p {
   margin: 60px 0;
 }
 
-.services-dedicated__list {
-  justify-content: space-between;
-  flex-wrap: wrap;
-  display: flex;
-  row-gap: 40px;
-}
-
-.services-dedicated__item {
-  width: 30%;
-}
-
 // .btn-grad {
 //   background-image: linear-gradient(
 //     to right,
@@ -134,7 +123,7 @@ p {
   white-space: nowrap;
   color: #fff;
   text-decoration: none;
-  transition: background-color 1s;
+  transition: background-color 0.5s;
   place-content: center;
 }
 .btn-grad:hover,

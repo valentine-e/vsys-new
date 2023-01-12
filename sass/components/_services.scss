@@ -1,14 +1,14 @@
-// #servicesContent,
-// #hostingContent,
-// #cloudContent,
-// #servicesContent {
-//   display: none;
-// }
+#serversContent,
+#hostingContent,
+#cloudContent,
+#servicesContent {
+  display: none;
+}
 
-#servers_button:checked ~ #servicesContent,
-#hosting_button:checked ~ #hostingContent,
-#cloud_button:checked ~ #cloudContent,
-#services_button:checked ~ #servicesContent {
+.services-menu:has(#servers_button:checked) ~ #serversContent,
+.services-menu:has(#hosting_button:checked) ~ #hostingContent,
+.services-menu:has(#cloud_button:checked) ~ #cloudContent,
+.services-menu:has(#services_button:checked) ~ #servicesContent {
   display: block;
 }
 
@@ -131,7 +131,20 @@ input[type="radio"] {
   justify-content: space-between;
   margin-bottom: 10px;
 }
+.services-dedicated__list {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  row-gap: 40px;
+}
 
+.services-dedicated__item {
+  width: 30%;
+
+  &:hover .services-dedicated__title {
+    color: var(--accent-color);
+  }
+}
 .menu-arrow--right {
   border-top: 6px dashed;
   border-top: 6px solid\9;
