@@ -8,7 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@900&family=IBM+Plex+Sans:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@900&display=swap"
       rel="stylesheet"
     />
 
@@ -18,7 +23,7 @@
     /> -->
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap"
       rel="stylesheet"
     />
 
@@ -49,22 +54,12 @@
         <div class="topbar">
           <div class="topbar-quality">
             <a class="topbar-quality__link" href="#">
-              <svg width="40" height="40">
-                <use
-                  class="topbar-quality__svg"
-                  href="./images/sprite.svg#quality-badge"
-                ></use>
+              <svg class="topbar-quality__svg" width="40" height="40">
+                <use href="./images/sprite.svg#quality-badge"></use>
               </svg>
               <p class="topbar-quality__title">
                 TRUSTED HOSTING PROVIDER SINCE 2009
               </p>
-
-              <!-- <svg width="40" height="40">
-                <use
-                  class="big-arrow"
-                  href="./images/sprite.svg#big-arrow"
-                ></use>
-              </svg> -->
               <span class="menu-arrow--right"></span>
             </a>
           </div>
@@ -72,11 +67,11 @@
           <ul class="topbar-buttons">
             <li class="navbar__item">
               <a
-                class="dropdown__button topbar__button topbar__button--white"
+                class="dropdown__button button button--sm button--white"
                 href="#"
                 >CONTACT US<span class="menu-arrow"></span
               ></a>
-              <ul class="navbar-dropdown dropdown__list dropdown--mt14">
+              <ul class="dropdown__menu dropdown--mt14">
                 <li>
                   <a class="dropdown__link" href="#"
                     >OPEN A NEW SUPPORT TICKET</a
@@ -96,25 +91,21 @@
                 </li>
               </ul>
             </li>
+
             <li class="topbar__item">
-              <button class="topbar__button">LOGIN</button>
+              <button class="button button--transparent button--sm">
+                LOGIN
+              </button>
             </li>
 
-            <!-- <li class="topbar__item">
-              <button class="topbar__button">SIGN UP</button>
-            </li> -->
-
             <li class="navbar__item">
-              <a class="dropdown__button topbar__button button-lang">
-                <svg width="40" height="40">
-                  <use
-                    class="planet-icon"
-                    href="./images/sprite.svg#planet-icon"
-                  ></use>
+              <a class="dropdown__button button--lang">
+                <svg class="planet-icon" width="40" height="40">
+                  <use href="./images/sprite.svg#planet-icon"></use>
                 </svg>
                 English <span class="menu-arrow"></span>
               </a>
-              <ul class="navbar-dropdown dropdown__list button-lang__list">
+              <ul class="dropdown__menu dropdown__menu--lang">
                 <li>
                   <a class="dropdown__link" href="#">UA</a>
                 </li>
@@ -124,18 +115,6 @@
                 <li></li>
               </ul>
             </li>
-
-            <!-- <li class="topbar__item">
-              <a class="dropdown__button topbar__button topbar__button--lang">
-                <svg width="40" height="40">
-                  <use
-                    class="planet-icon"
-                    href="./images/sprite.svg#planet-icon"
-                  ></use>
-                </svg>
-                English <span class="menu-arrow"></span>
-              </a>
-            </li> -->
           </ul>
         </div>
       </div>
@@ -168,7 +147,7 @@
                 <a class="dropdown__button" href="#"
                   >Servers<span class="menu-arrow"></span
                 ></a>
-                <ul class="navbar-dropdown">
+                <ul class="dropdown__menu">
                   <li>
                     <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                   </li>
@@ -208,7 +187,7 @@
                 <a class="dropdown__button" href="#"
                   >VPS<span class="menu-arrow"></span
                 ></a>
-                <ul class="navbar-dropdown">
+                <ul class="dropdown__menu">
                   <li>
                     <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                   </li>
@@ -252,7 +231,7 @@
                 <a class="dropdown__button" href="#"
                   >Cloud<span class="menu-arrow"></span
                 ></a>
-                <ul class="navbar-dropdown">
+                <ul class="dropdown__menu">
                   <li>
                     <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                   </li>
@@ -292,7 +271,7 @@
                 <a class="dropdown__button" href="#"
                   >Services<span class="menu-arrow"></span
                 ></a>
-                <ul class="navbar-dropdown">
+                <ul class="dropdown__menu">
                   <li>
                     <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                   </li>
@@ -332,7 +311,7 @@
                 <a class="dropdown__button" href="#"
                   >Solutions<span class="menu-arrow"></span
                 ></a>
-                <ul class="navbar-dropdown">
+                <ul class="dropdown__menu">
                   <li>
                     <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                   </li>
@@ -372,7 +351,7 @@
                 <a class="dropdown__button" href="#"
                   >Company<span class="menu-arrow"></span
                 ></a>
-                <ul class="navbar-dropdown">
+                <ul class="dropdown__menu">
                   <li>
                     <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                   </li>
@@ -412,7 +391,7 @@
                 <a class="dropdown__button" href="#"
                   >Recources<span class="menu-arrow"></span
                 ></a>
-                <ul class="navbar-dropdown">
+                <ul class="dropdown__menu">
                   <li>
                     <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
                   </li>
@@ -492,10 +471,10 @@
                       </p>
 
                       <div class="hero__buttons">
-                        <a class="hero__button hero__button--blue" href=""
+                        <a class="button button--transparent" href=""
                           >CHECK PRICING FOR USA DEDICATED SERVER</a
                         >
-                        <button class="hero__button hero__button--blue">
+                        <button class="button button--transparent">
                           CONTACT SALES TEAM
                         </button>
                       </div>
@@ -538,10 +517,10 @@
                       </p>
 
                       <div class="hero__buttons">
-                        <a class="hero__button hero__button--blue" href=""
+                        <a class="button button--blue" href=""
                           >CHECK PRICING FOR USA DEDICATED SERVER</a
                         >
-                        <button class="hero__button hero__button--blue">
+                        <button class="button button--blue">
                           CONTACT SALES TEAM
                         </button>
                       </div>
@@ -584,10 +563,10 @@
                       </p>
 
                       <div class="hero__buttons">
-                        <a class="hero__button hero__button--blue" href=""
+                        <a class="button button--blue" href=""
                           >CHECK PRICING FOR USA DEDICATED SERVER</a
                         >
-                        <button class="hero__button hero__button--blue">
+                        <button class="button button--blue">
                           CONTACT SALES TEAM
                         </button>
                       </div>
@@ -617,12 +596,16 @@
             <ul class="services-menu">
               <li class="services-menu__item">
                 <input
+                  checked
                   type="radio"
                   name="services_menu_toggle"
                   id="servers_button"
                   class="services-menu__button"
                 />
-                <label for="servers_button" class="services-menu__label"
+                <label
+                  tabindex="0"
+                  for="servers_button"
+                  class="services-menu__label"
                   >Servers <span class="menu-arrow--big"></span
                 ></label>
               </li>
@@ -634,7 +617,10 @@
                   id="hosting_button"
                   class="services-menu__button"
                 />
-                <label for="hosting_button" class="services-menu__label"
+                <label
+                  tabindex="0"
+                  for="hosting_button"
+                  class="services-menu__label"
                   >Hosting <span class="menu-arrow--big"></span>
                 </label>
               </li>
@@ -646,7 +632,10 @@
                   id="cloud_button"
                   class="services-menu__button"
                 />
-                <label for="cloud_button" class="services-menu__label"
+                <label
+                  tabindex="0"
+                  for="cloud_button"
+                  class="services-menu__label"
                   >Cloud <span class="menu-arrow--big"></span
                 ></label>
               </li>
@@ -658,16 +647,26 @@
                   id="services_button"
                   class="services-menu__button"
                 />
-                <label for="services_button" class="services-menu__label"
+                <label
+                  tabindex="0"
+                  for="services_button"
+                  class="services-menu__label"
                   >Services <span class="menu-arrow--big"></span
                 ></label>
               </li>
             </ul>
 
-            <div class="services-cards" id="serversContent">
+            <div id="serversContent">
+              <!-- <div class="services-label__box">
+                <p class="services-label__title">Dedicated from $18 /month</p>
+                <p class="services-label__title">Vps from $18 /month</p>
+              </div> -->
+
               <ul class="services-cards__list">
                 <li class="services-cards__item services-cards__item--blue">
-                  <h3 class="services-cards__title">Pro 10G</h3>
+                  <h3 class="section-subtitle services-cards__title">
+                    Pro 10G
+                  </h3>
                   <p class="services-cards__price">849$/month</p>
 
                   <p class="services-cards__info">
@@ -707,13 +706,15 @@
                     24x7 Support<span class="services-cards__value">+</span>
                   </p>
 
-                  <a href="#" class="services-cards__button btn-grad"
+                  <a href="#" class="button button-sm btn-grad"
                     >10 GBPS SERVER CONFIGURE</a
                   >
                 </li>
 
                 <li class="services-cards__item services-cards__item--blue">
-                  <h3 class="services-cards__title">Pro 10G</h3>
+                  <h3 class="section-subtitle services-cards__title">
+                    Sublime 10G
+                  </h3>
                   <p class="services-cards__price">849$/month</p>
 
                   <p class="services-cards__info">
@@ -753,13 +754,15 @@
                     24x7 Support<span class="services-cards__value">+</span>
                   </p>
 
-                  <a href="#" class="services-cards__button btn-grad"
+                  <a href="#" class="button button-sm btn-grad"
                     >10 GBPS SERVER CONFIGURE</a
                   >
                 </li>
 
                 <li class="services-cards__item services-cards__item--white">
-                  <h3 class="services-cards__title">Pro 10G</h3>
+                  <h3 class="section-subtitle services-cards__title">
+                    Supreme 10G
+                  </h3>
                   <p class="services-cards__price">849$/month</p>
 
                   <p class="services-cards__info">
@@ -799,13 +802,15 @@
                     24x7 Support<span class="services-cards__value">+</span>
                   </p>
 
-                  <a href="#" class="services-cards__button btn-grad"
+                  <a href="#" class="button button-sm btn-grad"
                     >10 GBPS SERVER CONFIGURE</a
                   >
                 </li>
 
                 <li class="services-cards__item services-cards__item--white">
-                  <h3 class="services-cards__title">Pro 10G</h3>
+                  <h3 class="section-subtitle services-cards__title">
+                    Pro 10G
+                  </h3>
                   <p class="services-cards__price">849$/month</p>
 
                   <p class="services-cards__info">
@@ -845,22 +850,26 @@
                     24x7 Support<span class="services-cards__value">+</span>
                   </p>
 
-                  <a href="#" class="services-cards__button btn-grad"
+                  <a href="#" class="button button-sm btn-grad"
                     >10 GBPS SERVER CONFIGURE</a
                   >
                 </li>
               </ul>
 
-              <h2 class="section-title">Dedicated Servers</h2>
+              <h2 class="section-title section-title--gradient">
+                Dedicated Servers
+              </h2>
 
               <ul class="services-dedicated__list">
                 <li class="services-dedicated__item">
                   <a href="#">
-                    <h3 class="services-dedicated__title">
+                    <h3 class="section-subtitle services-dedicated__title">
                       UKRAINE DEDICATED SERVERS
-                      <span class="menu-arrow menu-arrow--right"></span>
+                      <span
+                        class="menu-arrow menu-arrow--right menu-arrow--big"
+                      ></span>
                     </h3>
-                    <p class="services-dedicated__description">
+                    <p>
                       Customizable dedicated servers located at a Tier III data
                       center in Kyiv, Ukraine, with outstanding connectivity to
                       Asia and the Middle East. 24/7 professional technical
@@ -872,11 +881,13 @@
 
                 <li class="services-dedicated__item">
                   <a href="#">
-                    <h3 class="services-dedicated__title">
+                    <h3 class="section-subtitle services-dedicated__title">
                       UKRAINE DEDICATED SERVERS
-                      <span class="menu-arrow menu-arrow--right"></span>
+                      <span
+                        class="menu-arrow menu-arrow--right menu-arrow--big"
+                      ></span>
                     </h3>
-                    <p class="services-dedicated__description">
+                    <p>
                       Customizable dedicated servers located at a Tier III data
                       center in Kyiv, Ukraine, with outstanding connectivity to
                       Asia and the Middle East. 24/7 professional technical
@@ -888,11 +899,13 @@
 
                 <li class="services-dedicated__item">
                   <a href="#">
-                    <h3 class="services-dedicated__title">
+                    <h3 class="section-subtitle services-dedicated__title">
                       UKRAINE DEDICATED SERVERS
-                      <span class="menu-arrow menu-arrow--right"></span>
+                      <span
+                        class="menu-arrow menu-arrow--right menu-arrow--big"
+                      ></span>
                     </h3>
-                    <p class="services-dedicated__description">
+                    <p>
                       Customizable dedicated servers located at a Tier III data
                       center in Kyiv, Ukraine, with outstanding connectivity to
                       Asia and the Middle East. 24/7 professional technical
@@ -904,11 +917,13 @@
 
                 <li class="services-dedicated__item">
                   <a href="#">
-                    <h3 class="services-dedicated__title">
+                    <h3 class="section-subtitle services-dedicated__title">
                       UKRAINE DEDICATED SERVERS
-                      <span class="menu-arrow menu-arrow--right"></span>
+                      <span
+                        class="menu-arrow menu-arrow--right menu-arrow--big"
+                      ></span>
                     </h3>
-                    <p class="services-dedicated__description">
+                    <p>
                       Customizable dedicated servers located at a Tier III data
                       center in Kyiv, Ukraine, with outstanding connectivity to
                       Asia and the Middle East. 24/7 professional technical
@@ -920,11 +935,13 @@
 
                 <li class="services-dedicated__item">
                   <a href="#">
-                    <h3 class="services-dedicated__title">
+                    <h3 class="section-subtitle services-dedicated__title">
                       UKRAINE DEDICATED SERVERS
-                      <span class="menu-arrow menu-arrow--right"></span>
+                      <span
+                        class="menu-arrow menu-arrow--right menu-arrow--big"
+                      ></span>
                     </h3>
-                    <p class="services-dedicated__description">
+                    <p>
                       Customizable dedicated servers located at a Tier III data
                       center in Kyiv, Ukraine, with outstanding connectivity to
                       Asia and the Middle East. 24/7 professional technical
@@ -936,11 +953,13 @@
 
                 <li class="services-dedicated__item">
                   <a href="#">
-                    <h3 class="services-dedicated__title">
+                    <h3 class="section-subtitle services-dedicated__title">
                       UKRAINE DEDICATED SERVERS
-                      <span class="menu-arrow menu-arrow--right"></span>
+                      <span
+                        class="menu-arrow menu-arrow--right menu-arrow--big"
+                      ></span>
                     </h3>
-                    <p class="services-dedicated__description">
+                    <p>
                       Customizable dedicated servers located at a Tier III data
                       center in Kyiv, Ukraine, with outstanding connectivity to
                       Asia and the Middle East. 24/7 professional technical
@@ -952,11 +971,13 @@
 
                 <li class="services-dedicated__item">
                   <a href="#">
-                    <h3 class="services-dedicated__title">
+                    <h3 class="section-subtitle services-dedicated__title">
                       UKRAINE DEDICATED SERVERS
-                      <span class="menu-arrow menu-arrow--right"></span>
+                      <span
+                        class="menu-arrow menu-arrow--right menu-arrow--big"
+                      ></span>
                     </h3>
-                    <p class="services-dedicated__description">
+                    <p>
                       Customizable dedicated servers located at a Tier III data
                       center in Kyiv, Ukraine, with outstanding connectivity to
                       Asia and the Middle East. 24/7 professional technical
@@ -968,11 +989,13 @@
 
                 <li class="services-dedicated__item">
                   <a href="#">
-                    <h3 class="services-dedicated__title">
+                    <h3 class="section-subtitle services-dedicated__title">
                       UKRAINE DEDICATED SERVERS
-                      <span class="menu-arrow menu-arrow--right"></span>
+                      <span
+                        class="menu-arrow menu-arrow--right menu-arrow--big"
+                      ></span>
                     </h3>
-                    <p class="services-dedicated__description">
+                    <p>
                       Customizable dedicated servers located at a Tier III data
                       center in Kyiv, Ukraine, with outstanding connectivity to
                       Asia and the Middle East. 24/7 professional technical
@@ -984,11 +1007,11 @@
 
                 <li class="services-dedicated__item">
                   <a href="#">
-                    <h3 class="services-dedicated__title">
+                    <h3 class="section-subtitle services-dedicated__title">
                       UKRAINE DEDICATED SERVERS
                       <span class="menu-arrow menu-arrow--right"></span>
                     </h3>
-                    <p class="services-dedicated__description">
+                    <p>
                       Customizable dedicated servers located at a Tier III data
                       center in Kyiv, Ukraine, with outstanding connectivity to
                       Asia and the Middle East. 24/7 professional technical
@@ -999,20 +1022,24 @@
                 </li>
               </ul>
 
-              <h2 class="section-title">VPS</h2>
+              <h2 class="section-title section-title--gradient">VPS</h2>
 
               <ul class="services-vps__list">
                 <li class="services-vps__item">
-                  <a class="services-vps__link" href="#">Ukraine SSD VPS</a>
+                  <a class="button button-sm btn-grad" href="#"
+                    >Ukraine SSD VPS</a
+                  >
                 </li>
                 <li class="services-vps__item">
-                  <a class="services-vps__link" href="#">Netherlands SSD VPS</a>
+                  <a class="button button-sm btn-grad" href="#"
+                    >Netherlands SSD VPS</a
+                  >
                 </li>
                 <li class="services-vps__item">
-                  <a class="services-vps__link" href="#">usa SSD VPS</a>
+                  <a class="button button-sm btn-grad" href="#">usa SSD VPS</a>
                 </li>
                 <li class="services-vps__item">
-                  <a class="services-vps__link" href="#">epic VPS</a>
+                  <a class="button button-sm btn-grad" href="#">epic VPS</a>
                 </li>
               </ul>
             </div>
@@ -1021,7 +1048,73 @@
 
             <div id="cloudContent">Cloud</div>
 
-            <div id="servicesContent">Services</div>
+            <div id="servicesContent">
+              <ul class="services-content__list">
+                <li class="services-content__item">
+                  <h3 class="section-subtitle services-content__title">
+                    SAAS - XTREAM UI PANEL
+                  </h3>
+                  <p>
+                    Customizable dedicated servers located at a Tier III data
+                    center in Kyiv, Ukraine, with outstanding connectivity to
+                    Asia and the Middle East.
+                  </p>
+                  <a
+                    class="services-content__button button button-sm btn-grad"
+                    href="#"
+                    >Call to action</a
+                  >
+                </li>
+
+                <li class="services-content__item">
+                  <h3 class="section-subtitle services-content__title">
+                    DDOS PROTECTION
+                  </h3>
+                  <p>
+                    Customizable dedicated servers located at a Tier III data
+                    center in Kyiv, Ukraine, with outstanding connectivity to
+                    Asia and the Middle East.
+                  </p>
+                  <a
+                    class="services-content__button button button-sm btn-grad"
+                    href="#"
+                    >Call
+                  </a>
+                </li>
+
+                <li class="services-content__item">
+                  <h3 class="section-subtitle services-content__title">
+                    CRYPTO PAYMENT PROCESSOR
+                  </h3>
+                  <p>
+                    Customizable dedicated servers located at a Tier III data
+                    center in Kyiv, Ukraine, with outstanding connectivity to
+                    Asia and the Middle East.
+                  </p>
+                  <a
+                    class="services-content__button button button-sm btn-grad"
+                    href="#"
+                    >Call to action</a
+                  >
+                </li>
+
+                <li class="services-content__item">
+                  <h3 class="section-subtitle services-content__title">
+                    colocation
+                  </h3>
+                  <p>
+                    Customizable dedicated servers located at a Tier III data
+                    center in Kyiv, Ukraine, with outstanding connectivity to
+                    Asia and the Middle East.
+                  </p>
+                  <a
+                    class="services-content__button button button-sm btn-grad"
+                    href="#"
+                    >Call to action</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -1031,18 +1124,23 @@
       <section class="faq">
         <div class="faq__background"></div>
         <div class="section container">
-          <h2 class="section-title">faq</h2>
+          <h2 class="section-title section-title--gradient">faq</h2>
 
           <div class="accordion">
             <div class="accordion__item">
               <button class="accordion__btn" type="button">
-                <h3 class="accordion__title">PRIVACY DRIVEN</h3>
-                <svg class="accordion__arrow" width="40px" height="40px">
+                <h3 class="section-subtitle accordion__title">
+                  PRIVACY DRIVEN
+                  <span
+                    class="menu-arrow menu-arrow--big menu-arrow--right"
+                  ></span>
+                </h3>
+                <!-- <svg class="accordion__arrow" width="40px" height="40px">
                   <use
                     class="accordion__svg"
                     href="/images/sprite.svg#big-arrow"
                   ></use>
-                </svg>
+                </svg> -->
               </button>
 
               <p class="accordion__info">
@@ -1054,13 +1152,18 @@
 
             <div class="accordion__item">
               <button class="accordion__btn" type="button">
-                <h3 class="accordion__title">PRIVACY DRIVEN</h3>
-                <svg class="accordion__arrow" width="40px" height="40px">
+                <h3 class="section-subtitle accordion__title">
+                  PRIVACY DRIVEN
+                  <span
+                    class="menu-arrow menu-arrow--big menu-arrow--right"
+                  ></span>
+                </h3>
+                <!-- <svg class="accordion__arrow" width="40px" height="40px">
                   <use
                     class="accordion__svg"
                     href="/images/sprite.svg#big-arrow"
                   ></use>
-                </svg>
+                </svg> -->
               </button>
 
               <p class="accordion__info">
@@ -1072,13 +1175,18 @@
 
             <div class="accordion__item">
               <button class="accordion__btn" type="button">
-                <h3 class="accordion__title">PRIVACY DRIVEN</h3>
-                <svg class="accordion__arrow" width="40px" height="40px">
+                <h3 class="section-subtitle accordion__title">
+                  PRIVACY DRIVEN
+                  <span
+                    class="menu-arrow menu-arrow--big menu-arrow--right"
+                  ></span>
+                </h3>
+                <!-- <svg class="accordion__arrow" width="40px" height="40px">
                   <use
                     class="accordion__svg"
                     href="/images/sprite.svg#big-arrow"
                   ></use>
-                </svg>
+                </svg> -->
               </button>
 
               <p class="accordion__info">
@@ -1090,13 +1198,18 @@
 
             <div class="accordion__item">
               <button class="accordion__btn" type="button">
-                <h3 class="accordion__title">PRIVACY DRIVEN</h3>
-                <svg class="accordion__arrow" width="40px" height="40px">
+                <h3 class="section-subtitle accordion__title">
+                  PRIVACY DRIVEN
+                  <span
+                    class="menu-arrow menu-arrow--big menu-arrow--right"
+                  ></span>
+                </h3>
+                <!-- <svg class="accordion__arrow" width="40px" height="40px">
                   <use
                     class="accordion__svg"
                     href="/images/sprite.svg#big-arrow"
                   ></use>
-                </svg>
+                </svg> -->
               </button>
 
               <p class="accordion__info">
@@ -1108,13 +1221,18 @@
 
             <div class="accordion__item">
               <button class="accordion__btn" type="button">
-                <h3 class="accordion__title">PRIVACY DRIVEN</h3>
-                <svg class="accordion__arrow" width="40px" height="40px">
+                <h3 class="section-subtitle accordion__title">
+                  PRIVACY DRIVEN
+                  <span
+                    class="menu-arrow menu-arrow--big menu-arrow--right"
+                  ></span>
+                </h3>
+                <!-- <svg class="accordion__arrow" width="40px" height="40px">
                   <use
                     class="accordion__svg"
                     href="/images/sprite.svg#big-arrow"
                   ></use>
-                </svg>
+                </svg> -->
               </button>
 
               <p class="accordion__info">
@@ -1126,13 +1244,18 @@
 
             <div class="accordion__item">
               <button class="accordion__btn" type="button">
-                <h3 class="accordion__title">PRIVACY DRIVEN</h3>
-                <svg class="accordion__arrow" width="40px" height="40px">
+                <h3 class="section-subtitle accordion__title">
+                  PRIVACY DRIVEN
+                  <span
+                    class="menu-arrow menu-arrow--big menu-arrow--right"
+                  ></span>
+                </h3>
+                <!-- <svg class="accordion__arrow" width="40px" height="40px">
                   <use
                     class="accordion__svg"
                     href="/images/sprite.svg#big-arrow"
                   ></use>
-                </svg>
+                </svg> -->
               </button>
 
               <p class="accordion__info">
@@ -1189,7 +1312,7 @@
 
           <div class="footer-nav">
             <div class="footer__box">
-              <h3 class="footer__subtitle">SERVICES</h3>
+              <h3 class="section-subtitle footer__subtitle">SERVICES</h3>
               <ul class="footer-nav__list">
                 <li><a class="footer-nav__link" href="#">Web hosting</a></li>
                 <li><a class="footer-nav__link" href="#">VPS hosting</a></li>
@@ -1199,7 +1322,7 @@
             </div>
 
             <div class="footer__box">
-              <h3 class="footer__subtitle">COMPANY</h3>
+              <h3 class="section-subtitle footer__subtitle">COMPANY</h3>
               <ul class="footer-nav__list">
                 <li><a class="footer-nav__link" href="#">Abut us</a></li>
                 <li>
@@ -1211,7 +1334,7 @@
             </div>
 
             <div class="footer__box">
-              <h3 class="footer__subtitle">SERVICES</h3>
+              <h3 class="section-subtitle footer__subtitle">SERVICES</h3>
               <ul class="footer-nav__list">
                 <li>
                   <a class="footer-nav__link" href="#">Terms of service </a>
@@ -1241,7 +1364,9 @@
           </ul>
 
           <ul class="footer-payment">
-            <h3 class="footer__subtitle footer-payment__subtitle">
+            <h3
+              class="section-subtitle footer__subtitle footer-payment__subtitle"
+            >
               Payment system
             </h3>
             <li class="footer-payment__item">
