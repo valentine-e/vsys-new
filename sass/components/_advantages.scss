@@ -1,0 +1,26 @@
+.advantages__list {
+  row-gap: 30px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  width: 30%;
+}
+
+.advantages__subtitle {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .advantages__item {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__item {
+    width: 100%;
+  }
+}
