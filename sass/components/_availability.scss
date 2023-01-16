@@ -1,0 +1,30 @@
+.availability {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.availability-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.availability-section__list {
+  display: flex;
+}
+
+.availability-section__info {
+  width: 75%;
+}
+
+.availability-section .section-subtitle {
+  margin-bottom: 40px;
+}
+
+.availability-section__subtitle {
+  font-family: var(--title-font);
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  font-weight: 700;
+}

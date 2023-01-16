@@ -29,6 +29,7 @@
   display: flex;
   align-items: center;
   transition: color var(--timing-function);
+  margin-left: -10px;
 
   &:hover,
   &:focus {
@@ -241,10 +242,6 @@
 
     .navbar__list {
       flex-flow: column;
-    }
-
-    .navbar__item {
-      width: 50%;
     }
   }
 }
