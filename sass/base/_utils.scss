@@ -143,6 +143,8 @@ img {
 }
 
 .button {
+  display: flex;
+  justify-content: center;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;

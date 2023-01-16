@@ -83,12 +83,12 @@ input[type="radio"] {
 .services-cards__list {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  // column-gap: 5%;
   margin-bottom: 60px;
 }
 
 .services-cards__item {
-  width: 25%;
+  // width: 20%;
   padding: 30px 20px;
   border-radius: 10px;
   transition: transform var(--timing-function), filter var(--timing-function),
@@ -231,4 +231,33 @@ input[type="radio"] {
 
 .services-content__title {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .services-cards__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+  }
+
+  .services-vps__list {
+    gap: 30px;
+  }
+  // .services-cards__item {
+
+  // }
+}
+
+@media screen and (max-width: 767px) {
+  .services-dedicated__item {
+    width: 100%;
+  }
+
+  .services-vps__list {
+    flex-wrap: wrap;
+  }
+
+  .services-vps__item {
+    width: 45%;
+  }
 }

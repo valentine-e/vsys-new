@@ -114,6 +114,8 @@ img {
 }
 
 .button {
+  display: flex;
+  justify-content: center;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
@@ -648,12 +650,10 @@ input[type=radio] {
 .services-cards__list {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
   margin-bottom: 60px;
 }
 
 .services-cards__item {
-  width: 25%;
   padding: 30px 20px;
   border-radius: 10px;
   transition: transform var(--timing-function), filter var(--timing-function), outline var(--timing-function);
@@ -760,6 +760,27 @@ input[type=radio] {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1199px) {
+  .services-cards__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+  }
+  .services-vps__list {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .services-dedicated__item {
+    width: 100%;
+  }
+  .services-vps__list {
+    flex-wrap: wrap;
+  }
+  .services-vps__item {
+    width: 45%;
+  }
+}
 .faq {
   position: relative;
   padding-bottom: 120px;
