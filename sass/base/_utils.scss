@@ -50,7 +50,7 @@ img {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 32px;
-  margin: 0 0 60px 0;
+  margin: 0 0 30px 0;
 }
 
 .section-title--gradient {
@@ -59,11 +59,19 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+.section-title--white {
+  color: var(--secondary-text-color);
+}
+
 .section-subtitle {
   font-size: 16px;
   text-transform: uppercase;
   color: var(--primary-text-color);
   font-weight: 700;
+}
+
+.section-subtitle--blue {
+  color: var(--accent-color);
 }
 
 .services-content__button {
@@ -150,6 +158,8 @@ img {
   cursor: pointer;
   transition: color var(--timing-function),
     background-color var(--timing-function), background var(--timing-function);
+  height: max-content;
+  width: max-content;
 }
 
 // .button--white {

@@ -1,0 +1,23 @@
+.payment {
+  background: linear-gradient(
+    180deg,
+    #191f32 2.92%,
+    #305e8a 49.72%,
+    #4aa7f0 97.41%
+  );
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.payment__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .payment__list {
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}

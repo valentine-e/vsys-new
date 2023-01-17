@@ -87,7 +87,7 @@ input[type="radio"] {
 .services-cards__list {
   display: flex;
   justify-content: space-between;
-  // column-gap: 5%;
+  gap: 30px;
   margin-bottom: 60px;
 }
 
