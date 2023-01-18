@@ -1,0 +1,110 @@
+.couverage {
+  padding-bottom: 80px;
+}
+
+.couverage .section-title {
+  margin-bottom: 0;
+}
+
+.couverage__content {
+  align-items: center;
+  display: flex;
+  gap: 60px;
+}
+
+.couverage__description {
+  width: 40%;
+}
+
+.couverage__map {
+  width: 60%;
+  position: relative;
+}
+
+.couverage__svg {
+  width: 100%;
+}
+
+.couverage__marker {
+  position: absolute;
+  transform-origin: bottom;
+
+  &:hover {
+    animation: pulsate-bck 0.5s ease-in-out infinite both;
+  }
+}
+
+.couverage__marker--kyiv {
+  top: 16%;
+  right: 6%;
+}
+
+.couverage__marker--amsterdam {
+  top: 9%;
+  right: 35%;
+}
+
+.couverage__marker--seattle {
+  bottom: 57%;
+  left: 3%;
+}
+
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.couverage__description:has(.couverage__item--kyiv:hover)
+  ~ .couverage__map
+  .couverage__marker--kyiv,
+.couverage__description:has(.couverage__item--amsterdam:hover)
+  ~ .couverage__map
+  .couverage__marker--amsterdam,
+.couverage__description:has(.couverage__item--seattle:hover)
+  ~ .couverage__map
+  .couverage__marker--seattle {
+  animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+
+.couverage__list {
+  display: flex;
+  flex-flow: column;
+}
+
+.couverage__item {
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.couverage__name {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .couverage__content {
+    gap: 30px;
+    flex-flow: column;
+  }
+
+  .couverage__description {
+    width: 100%;
+  }
+
+  .couverage__map {
+    width: 100%;
+  }
+
+  .couverage .section-title {
+    margin-bottom: 30px;
+  }
+}
