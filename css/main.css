@@ -256,7 +256,7 @@ img {
 }
 
 .topbar {
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -335,7 +335,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
 }
 
 .navbar__list {
@@ -438,9 +438,9 @@ img {
     position: fixed;
     overflow-y: scroll;
     left: 0;
-    top: 71px;
+    top: 51px;
     width: 100vw;
-    height: calc(100vh - 71px);
+    height: calc(100dvh - 51px);
     background: linear-gradient(180deg, #191f32 2.92%, #305e8a 49.72%, #4aa7f0 97.41%);
     z-index: 1;
     opacity: 0;
@@ -465,6 +465,9 @@ img {
   }
   .navbar {
     padding: 5px 0 5px 0;
+  }
+  .navbar__item {
+    width: 250px;
   }
 }
 .hero {
@@ -613,10 +616,10 @@ img {
   display: none;
 }
 
-.services-menu:has(#servers_button:checked) ~ #serversContent,
-.services-menu:has(#hosting_button:checked) ~ #hostingContent,
-.services-menu:has(#cloud_button:checked) ~ #cloudContent,
-.services-menu:has(#services_button:checked) ~ #servicesContent {
+#servers_button:checked ~ #serversContent,
+#hosting_button:checked ~ #hostingContent,
+#cloud_button:checked ~ #cloudContent,
+#services_button:checked ~ #servicesContent {
   display: block;
 }
 
@@ -665,14 +668,6 @@ input[type=radio] {
 }
 .services-menu__item:hover {
   background-color: rgba(255, 255, 255, 0.3);
-}
-
-.services-menu__item:has(.services-menu__button:checked) {
-  background-color: var(--secondary-text-color);
-}
-
-.services-menu__item:has(.services-menu__button:checked) .services-menu__label {
-  color: var(--accent-color);
 }
 
 .services-menu__label {
@@ -878,7 +873,7 @@ input[type=radio] {
 .accordion__btn:focus .accordion__title {
   color: var(--accent-color);
 }
-.accordion__btn:focus + .accordion__info {
+.accordion__btn:focus ~ .accordion__info {
   max-height: 4rem;
 }
 .accordion__btn:focus .menu-arrow--right {
@@ -1157,7 +1152,7 @@ input[type=radio] {
 }
 
 .advantages__image {
-  display: flex;
+  display: block;
   margin: 0 auto 20px;
 }
 

@@ -46,7 +46,7 @@
     color: var(--accent-color);
   }
 
-  &:focus + .accordion__info {
+  &:focus ~ .accordion__info {
     max-height: 4rem;
   }
 

@@ -22,7 +22,7 @@ function moveRight() {
   sliderContent.style.transform = `translateX(${currentPosition}%)`;
 }
 
-setInterval(autoScroll, 3000);
+// setInterval(autoScroll, 3000);
 
 // function autoScroll() {
 //   if (!(currentPosition > -((countSlides - 1) * 100))) {

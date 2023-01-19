@@ -6,7 +6,7 @@
 }
 
 .topbar {
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,7 +108,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
 }
 
 .navbar__list {
@@ -218,9 +218,9 @@
     position: fixed;
     overflow-y: scroll;
     left: 0;
-    top: 71px;
+    top: 51px;
     width: 100vw;
-    height: calc(100vh - 71px);
+    height: calc(100dvh - 51px);
     background: linear-gradient(
       180deg,
       #191f32 2.92%,
@@ -255,5 +255,9 @@
 
   .navbar {
     padding: 5px 0 5px 0;
+  }
+
+  .navbar__item {
+    width: 250px;
   }
 }

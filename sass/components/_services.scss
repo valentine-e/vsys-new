@@ -5,10 +5,10 @@
   display: none;
 }
 
-.services-menu:has(#servers_button:checked) ~ #serversContent,
-.services-menu:has(#hosting_button:checked) ~ #hostingContent,
-.services-menu:has(#cloud_button:checked) ~ #cloudContent,
-.services-menu:has(#services_button:checked) ~ #servicesContent {
+#servers_button:checked ~ #serversContent,
+#hosting_button:checked ~ #hostingContent,
+#cloud_button:checked ~ #cloudContent,
+#services_button:checked ~ #servicesContent {
   display: block;
 }
 
@@ -62,13 +62,13 @@ input[type="radio"] {
   }
 }
 
-.services-menu__item:has(.services-menu__button:checked) {
-  background-color: var(--secondary-text-color);
-}
+// .services-menu__item:has(.services-menu__button:checked) {
+//   background-color: var(--secondary-text-color);
+// }
 
-.services-menu__item:has(.services-menu__button:checked) .services-menu__label {
-  color: var(--accent-color);
-}
+// .services-menu__item:has(.services-menu__button:checked) .services-menu__label {
+//   color: var(--accent-color);
+// }
 
 .services-menu__label {
   font-size: 16px;

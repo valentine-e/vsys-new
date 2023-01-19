@@ -144,9 +144,9 @@
           <div class="mobile-menu" id="mobile-menu" data-menu>
             <ul class="navbar__list mobile-menu__container">
               <li class="navbar__item">
-                <a class="dropdown__button" href="#"
-                  >Servers<span class="menu-arrow"></span
-                ></a>
+                <button type="button" class="dropdown__button" href="#">
+                  Servers<span class="menu-arrow"></span>
+                </button>
                 <ul class="dropdown__menu">
                   <li>
                     <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
@@ -223,7 +223,7 @@
                 </ul>
               </li>
 
-              <li class="navbar__item navbar__item--width">
+              <li class="navbar__item">
                 <a class="dropdown__button" href="#">Hosting</a>
               </li>
 
@@ -595,15 +595,33 @@
       <section class="services">
         <div class="container">
           <div class="services__container">
+            <input
+              checked
+              type="radio"
+              name="services_menu_toggle"
+              id="servers_button"
+              class="services-menu__button"
+            />
+            <input
+              type="radio"
+              name="services_menu_toggle"
+              id="hosting_button"
+              class="services-menu__button"
+            />
+            <input
+              type="radio"
+              name="services_menu_toggle"
+              id="cloud_button"
+              class="services-menu__button"
+            />
+            <input
+              type="radio"
+              name="services_menu_toggle"
+              id="services_button"
+              class="services-menu__button"
+            />
             <ul class="services-menu">
               <li class="services-menu__item">
-                <input
-                  checked
-                  type="radio"
-                  name="services_menu_toggle"
-                  id="servers_button"
-                  class="services-menu__button"
-                />
                 <label
                   tabindex="0"
                   for="servers_button"
@@ -613,12 +631,6 @@
               </li>
 
               <li class="services-menu__item">
-                <input
-                  type="radio"
-                  name="services_menu_toggle"
-                  id="hosting_button"
-                  class="services-menu__button"
-                />
                 <label
                   tabindex="0"
                   for="hosting_button"
@@ -628,12 +640,6 @@
               </li>
 
               <li class="services-menu__item">
-                <input
-                  type="radio"
-                  name="services_menu_toggle"
-                  id="cloud_button"
-                  class="services-menu__button"
-                />
                 <label
                   tabindex="0"
                   for="cloud_button"
@@ -643,12 +649,6 @@
               </li>
 
               <li class="services-menu__item">
-                <input
-                  type="radio"
-                  name="services_menu_toggle"
-                  id="services_button"
-                  class="services-menu__button"
-                />
                 <label
                   tabindex="0"
                   for="services_button"
@@ -1163,10 +1163,7 @@
           <ul class="advantages__list">
             <li class="advantages__item">
               <svg class="advantages__image" width="90px" height="90px">
-                <use
-                  class="advantages__svg"
-                  href="./images/sprite.svg#advantages-image_1"
-                ></use>
+                <use href="./images/sprite.svg#advantages-image_1"></use>
               </svg>
               <h3 class="section-subtitle advantages__subtitle">
                 FAIRLY PRICED
@@ -1182,10 +1179,7 @@
             </li>
             <li class="advantages__item">
               <svg class="advantages__image" width="90px" height="90px">
-                <use
-                  class="advantages__svg"
-                  href="./images/sprite.svg#advantages-image_2"
-                ></use>
+                <use href="./images/sprite.svg#advantages-image_2"></use>
               </svg>
               <h3 class="section-subtitle advantages__subtitle">
                 FAIRLY PRICED
@@ -1201,10 +1195,7 @@
             </li>
             <li class="advantages__item">
               <svg class="advantages__image" width="90px" height="90px">
-                <use
-                  class="advantages__svg"
-                  href="./images/sprite.svg#advantages-image_3"
-                ></use>
+                <use href="./images/sprite.svg#advantages-image_3"></use>
               </svg>
               <h3 class="section-subtitle advantages__subtitle">
                 FAIRLY PRICED
@@ -1220,10 +1211,7 @@
             </li>
             <li class="advantages__item">
               <svg class="advantages__image" width="90px" height="90px">
-                <use
-                  class="advantages__svg"
-                  href="./images/sprite.svg#advantages-image_4"
-                ></use>
+                <use href="./images/sprite.svg#advantages-image_4"></use>
               </svg>
               <h3 class="section-subtitle advantages__subtitle">
                 FAIRLY PRICED
@@ -1239,10 +1227,7 @@
             </li>
             <li class="advantages__item">
               <svg class="advantages__image" width="90px" height="90px">
-                <use
-                  class="advantages__svg"
-                  href="./images/sprite.svg#advantages-image_5"
-                ></use>
+                <use href="./images/sprite.svg#advantages-image_5"></use>
               </svg>
               <h3 class="section-subtitle advantages__subtitle">
                 FAIRLY PRICED
@@ -1258,10 +1243,7 @@
             </li>
             <li class="advantages__item">
               <svg class="advantages__image" width="90px" height="90px">
-                <use
-                  class="advantages__svg"
-                  href="./images/sprite.svg#advantages-image_6"
-                ></use>
+                <use href="./images/sprite.svg#advantages-image_6"></use>
               </svg>
               <h3 class="section-subtitle advantages__subtitle">
                 FAIRLY PRICED
@@ -1474,61 +1456,55 @@
           <h2 class="section-title section-title--white">Payment methods</h2>
           <ul class="payment__list">
             <li class="payment__item">
-              <svg width="90px" height="60px" class="payment__img">
+              <svg width="90px" height="60px">
                 <use
                   width="90px"
                   height="60px"
-                  class="payment__svg"
                   href="./images/sprite.svg#payment-bitcoin"
                 ></use>
               </svg>
             </li>
             <li class="payment__item">
-              <svg width="90px" height="60px" class="payment__img">
+              <svg width="90px" height="60px">
                 <use
                   width="90px"
                   height="60px"
-                  class="payment__svg"
                   href="./images/sprite.svg#payment-paypal"
                 ></use>
               </svg>
             </li>
             <li class="payment__item">
-              <svg width="90px" height="60px" class="payment__img">
+              <svg width="90px" height="60px">
                 <use
                   width="90px"
                   height="60px"
-                  class="payment__svg"
                   href="./images/sprite.svg#payment-bank-transfer"
                 ></use>
               </svg>
             </li>
             <li class="payment__item">
-              <svg width="90px" height="60px" class="payment__img">
+              <svg width="90px" height="60px">
                 <use
                   width="90px"
                   height="60px"
-                  class="payment__svg"
                   href="./images/sprite.svg#payment-webmoney"
                 ></use>
               </svg>
             </li>
             <li class="payment__item">
-              <svg width="90px" height="60px" class="payment__img">
+              <svg width="90px" height="60px">
                 <use
                   width="90px"
                   height="60px"
-                  class="payment__svg"
                   href="./images/sprite.svg#payment-visa"
                 ></use>
               </svg>
             </li>
             <li class="payment__item">
-              <svg width="90px" height="60px" class="payment__img">
+              <svg width="90px" height="60px">
                 <use
                   width="90px"
                   height="60px"
-                  class="payment__svg"
                   href="./images/sprite.svg#payment-mastercard"
                 ></use>
               </svg>
@@ -1925,7 +1901,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./js/script.js"></script>
     <script src="./js/dropdown.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
