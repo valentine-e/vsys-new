@@ -15,8 +15,13 @@
 }
 
 @media screen and (max-width: 767px) {
+  .payment {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .payment__list {
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
   }

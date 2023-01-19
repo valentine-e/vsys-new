@@ -35,13 +35,13 @@
 }
 
 .couverage__marker--kyiv {
-  top: 16%;
-  right: 6%;
+  top: 11%;
+  right: 40%;
 }
 
 .couverage__marker--amsterdam {
-  top: 9%;
-  right: 35%;
+  top: 5%;
+  right: 58%;
 }
 
 .couverage__marker--seattle {
@@ -106,5 +106,11 @@
 
   .couverage .section-title {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .couverage {
+    padding-bottom: 30px;
   }
 }

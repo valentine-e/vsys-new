@@ -42,9 +42,19 @@
 // }
 
 @media screen and (max-width: 767px) {
+  .contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .contact__container {
     display: flex;
     flex-flow: column;
     gap: 60px;
+    align-items: center;
+  }
+
+  .contact__call {
+    text-align: center;
   }
 }

@@ -37,7 +37,6 @@ input[type="radio"] {
 
 .services__container {
   padding-top: 60px;
-
   position: relative;
 }
 
@@ -206,22 +205,6 @@ input[type="radio"] {
   width: 25%;
 }
 
-// .services-vps__link {
-//   text-align: center;
-//   width: 100%;
-//   color: var(--accent-color);
-//   outline: 1px solid var(--accent-color);
-//   border-radius: 10px;
-//   padding: 10px 15px;
-//   white-space: nowrap;
-
-//   &:hover {
-//     background: linear-gradient(180deg, #144da4, transparent) #4aa7f0;
-//     color: var(--secondary-text-color);
-//     outline: none;
-//   }
-// }
-
 .services-content__list {
   display: flex;
   justify-content: space-between;
@@ -270,6 +253,10 @@ input[type="radio"] {
   }
 
   .services-vps__item {
-    width: 45%;
+    width: 200px;
+  }
+
+  .services-vps__item a {
+    width: 100%;
   }
 }

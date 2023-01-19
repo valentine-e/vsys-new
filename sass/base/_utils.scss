@@ -32,8 +32,8 @@ img {
   margin-right: auto;
   box-sizing: border-box;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: 375px) {
+    width: 375px;
   }
 
   @media screen and (min-width: 768px) {
@@ -242,6 +242,9 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 24px;
+  }
   .dropdown__link {
     color: var(--secondary-text-color);
     transition: color var(--timing-function),
