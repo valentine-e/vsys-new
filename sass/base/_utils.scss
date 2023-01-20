@@ -50,7 +50,7 @@ img {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 32px;
-  margin: 0 0 30px 0;
+  margin: 0 0 60px 0;
 }
 
 .section-title--gradient {
@@ -158,7 +158,7 @@ img {
   border-radius: 10px;
   white-space: nowrap;
   cursor: pointer;
-  transition: color var(--timing-function),
+  transition: color var(--timing-function), border var(--timing-function),
     background-color var(--timing-function), background var(--timing-function);
   height: max-content;
   width: max-content;
@@ -203,10 +203,24 @@ img {
   }
 }
 
+.button--light {
+  // background: linear-gradient(0deg, #144da4, transparent) #144da4;
+  background-color: var(--primary-background-color);
+  color: var(--accent-color);
+  border: 1px solid #88c8fa;
+}
+
+.button--light:hover,
+.button--light:focus {
+  background: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
 .btn-grad {
   background: linear-gradient(0deg, #144da4, transparent) #144da4;
   color: var(--secondary-text-color);
 }
+
 .btn-grad:hover,
 .btn-grad:focus {
   background: linear-gradient(0deg, #144da4, transparent) #4aa7f0;

@@ -53,7 +53,7 @@ img {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 32px;
-  margin: 0 0 30px 0;
+  margin: 0 0 60px 0;
 }
 
 .section-title--gradient {
@@ -133,7 +133,7 @@ img {
   border-radius: 10px;
   white-space: nowrap;
   cursor: pointer;
-  transition: color var(--timing-function), background-color var(--timing-function), background var(--timing-function);
+  transition: color var(--timing-function), border var(--timing-function), background-color var(--timing-function), background var(--timing-function);
   height: max-content;
   width: max-content;
 }
@@ -160,6 +160,18 @@ img {
 .button--white:hover, .button--white:focus {
   color: var(--accent-color);
   border-color: var(--light-blue-text);
+}
+
+.button--light {
+  background-color: var(--primary-background-color);
+  color: var(--accent-color);
+  border: 1px solid #88c8fa;
+}
+
+.button--light:hover,
+.button--light:focus {
+  background: var(--accent-color);
+  color: var(--secondary-text-color);
 }
 
 .btn-grad {
@@ -488,11 +500,11 @@ img {
   position: relative;
   background: linear-gradient(180deg, #191f32 2.92%, #305e8a 49.72%, #4aa7f0 97.41%);
   padding-top: 40px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .hero__background-img {
-  background-image: url(./images/hero-decor.svg);
+  background-image: url(/images/hero-decor.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -506,6 +518,7 @@ img {
   display: flex;
   flex-flow: column;
   position: relative;
+  justify-content: space-between;
 }
 
 .hero__title {
@@ -526,6 +539,9 @@ img {
 }
 
 .hero__info {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
   order: 1;
   width: 60%;
 }
@@ -546,25 +562,6 @@ img {
   justify-content: center;
   width: 30%;
   order: 2;
-}
-
-.hero__svg {
-  min-width: fit-content;
-}
-
-.slider__viewbox {
-  overflow: hidden;
-}
-
-.slider-content {
-  display: flex;
-  flex-wrap: nowrap;
-  transition: transform var(--timing-function);
-}
-
-.slider__container {
-  width: 100%;
-  flex-shrink: 0;
 }
 
 .slider__controls {
@@ -1144,6 +1141,7 @@ input[type=radio] {
   display: flex;
   justify-content: space-between;
   margin-bottom: 60px;
+  column-gap: 60px;
 }
 
 .advantages-steps__list {
@@ -1408,7 +1406,7 @@ input[type=radio] {
 }
 
 .couverage .section-title {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .couverage__content {
@@ -1507,14 +1505,19 @@ input[type=radio] {
     padding-bottom: 30px;
   }
 }
-.swiper {
-  width: 1170px;
-  height: 460px;
-}
-
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .swiper-pagination-bullet {
@@ -1551,18 +1554,30 @@ input[type=radio] {
 
 .swiper {
   width: 1170px;
-  height: 460px;
+  min-height: fit-content;
+  padding-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px) {
   .swiper {
     width: 767px;
-    height: 750px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 30px;
   }
 }
 @media screen and (max-width: 767px) {
   .swiper {
     width: 345px;
-    height: 790px;
+    padding-bottom: 60px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 30px;
   }
 }/*# sourceMappingURL=main.css.map */
