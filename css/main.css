@@ -500,7 +500,7 @@ img {
   position: relative;
   background: linear-gradient(180deg, #191f32 2.92%, #305e8a 49.72%, #4aa7f0 97.41%);
   padding-top: 40px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .hero__background-img {
@@ -534,7 +534,7 @@ img {
 }
 
 .hero__thumb {
-  gap: 10%;
+  gap: 5%;
   display: flex;
 }
 
@@ -543,7 +543,7 @@ img {
   flex-flow: column;
   justify-content: space-between;
   order: 1;
-  width: 60%;
+  width: 70%;
 }
 
 .hero__description {
@@ -560,8 +560,12 @@ img {
 .hero__image {
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 25%;
   order: 2;
+}
+
+.hero__svg {
+  width: 90%;
 }
 
 .slider__controls {
@@ -1518,7 +1522,8 @@ input[type=radio] {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding-right: 130px;
+  padding-right: 100px;
+  top: 78%;
 }
 
 .swiper-pagination-bullet {

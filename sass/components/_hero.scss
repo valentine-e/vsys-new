@@ -8,7 +8,7 @@
   );
 
   padding-top: 40px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .hero__background-img {
@@ -43,7 +43,7 @@
 }
 
 .hero__thumb {
-  gap: 10%;
+  gap: 5%;
   display: flex;
 }
 
@@ -52,7 +52,7 @@
   flex-flow: column;
   justify-content: space-between;
   order: 1;
-  width: 60%;
+  width: 70%;
 }
 
 .hero__description {
@@ -69,12 +69,12 @@
 .hero__image {
   display: flex;
   justify-content: center;
-  width: 30%;
+  width: 25%;
   order: 2;
 }
-// .hero__svg {
-//   min-width: fit-content;
-// }
+.hero__svg {
+  width: 90%;
+}
 
 // .slider__viewbox {
 //   overflow: hidden;
