@@ -47,3 +47,22 @@
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
+
+.swiper {
+  width: 1170px;
+  height: 460px;
+}
+
+@media screen and (max-width: 1199px) {
+  .swiper {
+    width: 767px;
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .swiper {
+    width: 345px;
+    height: 790px;
+  }
+}

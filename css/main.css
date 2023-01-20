@@ -572,6 +572,9 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
+  .hero {
+    padding-bottom: 75px;
+  }
   .hero__thumb {
     display: flex;
     order: 2;
@@ -598,7 +601,7 @@ img {
 @media screen and (max-width: 767px) {
   .hero {
     padding-top: 20px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
   .hero__buttons {
     flex-flow: column;
@@ -1544,4 +1547,22 @@ input[type=radio] {
   align-items: center;
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+.swiper {
+  width: 1170px;
+  height: 460px;
+}
+
+@media screen and (max-width: 1199px) {
+  .swiper {
+    width: 767px;
+    height: 750px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .swiper {
+    width: 345px;
+    height: 790px;
+  }
 }/*# sourceMappingURL=main.css.map */
