@@ -42,6 +42,11 @@
       rel="stylesheet"
     /> -->
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -454,14 +459,14 @@
       <section class="hero">
         <div class="hero__background-img"></div>
 
-        <div class="slider__controls">
+        <!-- <div class="slider__controls">
           <button id="left">left</button> <button id="right">right</button>
-        </div>
+        </div> -->
 
         <div class="container section">
-          <div class="slider__viewbox">
-            <ul class="slider-content">
-              <li class="slider__container">
+          <div class="slider__viewbox swiper">
+            <ul class="slider-content swiper-wrapper">
+              <li class="slider__container swiper-slide">
                 <div class="hero__content">
                   <h1 class="hero__title">
                     Quality has a name - Vsys Host,
@@ -508,11 +513,12 @@
                 </div>
               </li>
 
-              <li class="slider__container">
+              <li class="slider__container swiper-slide">
                 <div class="hero__content">
                   <h1 class="hero__title">
-                    Quality has a name - Vsys Host, the top-notch hosting
-                    provider
+                    Quality has a name - Vsys Host,
+                    <span class="hero__title--nowrap"><br /></span>
+                    the top-notch hosting provider
                   </h1>
 
                   <div class="hero__thumb">
@@ -526,17 +532,17 @@
                         bare metal beast - crypto payments are welcome.
                         <br /><br />
                         Ticket response time:
-                        <span class="text--lightblue">15 minutes</span><br />
+                        <span class="text--lightwhite">15 minutes</span><br />
                         Uptime of our servers:
                         <span class="text--lightblue">99.9% </span
                         ><br />Payments:
                       </p>
 
                       <div class="hero__buttons">
-                        <a class="button button--blue" href=""
+                        <a class="button button--transparent" href=""
                           >CHECK PRICING FOR USA DEDICATED SERVER</a
                         >
-                        <button class="button button--blue">
+                        <button class="button button--transparent">
                           CONTACT SALES TEAM
                         </button>
                       </div>
@@ -554,11 +560,12 @@
                 </div>
               </li>
 
-              <li class="slider__container">
+              <li class="slider__container swiper-slide">
                 <div class="hero__content">
                   <h1 class="hero__title">
-                    Quality has a name - Vsys Host, the top-notch hosting
-                    provider
+                    Quality has a name - Vsys Host,
+                    <span class="hero__title--nowrap"><br /></span>
+                    the top-notch hosting provider
                   </h1>
 
                   <div class="hero__thumb">
@@ -572,17 +579,17 @@
                         bare metal beast - crypto payments are welcome.
                         <br /><br />
                         Ticket response time:
-                        <span class="text--lightblue">15 minutes</span><br />
+                        <span class="text--lightwhite">15 minutes</span><br />
                         Uptime of our servers:
                         <span class="text--lightblue">99.9% </span
                         ><br />Payments:
                       </p>
 
                       <div class="hero__buttons">
-                        <a class="button button--blue" href=""
+                        <a class="button button--transparent" href=""
                           >CHECK PRICING FOR USA DEDICATED SERVER</a
                         >
-                        <button class="button button--blue">
+                        <button class="button button--transparent">
                           CONTACT SALES TEAM
                         </button>
                       </div>
@@ -600,6 +607,11 @@
                 </div>
               </li>
             </ul>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </section>
@@ -1944,6 +1956,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/dropdown.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
