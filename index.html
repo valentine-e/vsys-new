@@ -609,15 +609,37 @@
       <section class="services">
         <div class="container">
           <div class="services__container">
+            <input
+              checked
+              type="radio"
+              name="services_menu_toggle"
+              id="servers_button"
+              class="services-menu__button"
+            />
+
+            <input
+              type="radio"
+              name="services_menu_toggle"
+              id="hosting_button"
+              class="services-menu__button"
+            />
+
+            <input
+              type="radio"
+              name="services_menu_toggle"
+              id="cloud_button"
+              class="services-menu__button"
+            />
+
+            <input
+              type="radio"
+              name="services_menu_toggle"
+              id="services_button"
+              class="services-menu__button"
+            />
+
             <ul class="services-menu">
               <li class="services-menu__item">
-                <input
-                  checked
-                  type="radio"
-                  name="services_menu_toggle"
-                  id="servers_button"
-                  class="services-menu__button"
-                />
                 <label
                   tabindex="0"
                   for="servers_button"
@@ -627,12 +649,6 @@
               </li>
 
               <li class="services-menu__item">
-                <input
-                  type="radio"
-                  name="services_menu_toggle"
-                  id="hosting_button"
-                  class="services-menu__button"
-                />
                 <label
                   tabindex="0"
                   for="hosting_button"
@@ -642,12 +658,6 @@
               </li>
 
               <li class="services-menu__item">
-                <input
-                  type="radio"
-                  name="services_menu_toggle"
-                  id="cloud_button"
-                  class="services-menu__button"
-                />
                 <label
                   tabindex="0"
                   for="cloud_button"
@@ -657,12 +667,6 @@
               </li>
 
               <li class="services-menu__item">
-                <input
-                  type="radio"
-                  name="services_menu_toggle"
-                  id="services_button"
-                  class="services-menu__button"
-                />
                 <label
                   tabindex="0"
                   for="services_button"
@@ -1943,5 +1947,6 @@
     <script src="./js/dropdown.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -231,6 +231,7 @@ img {
     justify-content: space-between;
   }
   .dropdown__menu {
+    background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
     display: block;
     position: relative;
@@ -456,6 +457,7 @@ img {
     background: linear-gradient(180deg, #191f32 2.92%, #305e8a 49.72%, #4aa7f0 97.41%);
     z-index: 1;
     opacity: 0;
+    padding-top: 30px;
     transition: transform var(--timing-function), opacity var(--timing-function);
     pointer-events: none;
   }
@@ -635,6 +637,15 @@ img {
   display: block;
 }
 
+#servers_button:checked ~ .services-menu label[for=servers_button],
+#hosting_button:checked ~ .services-menu label[for=hosting_button],
+#cloud_button:checked ~ .services-menu label[for=cloud_button],
+#services_button:checked ~ .services-menu label[for=services_button] {
+  background-color: var(--primary-background-color);
+  color: var(--accent-color);
+  border-radius: 10px 10px 0 0;
+}
+
 input[type=radio] {
   opacity: 0;
   position: absolute;
@@ -785,13 +796,17 @@ input[type=radio] {
 }
 
 .services-vps__list {
-  gap: 60px;
+  gap: 80px;
   display: flex;
   justify-content: space-between;
 }
 
 .services-vps__item {
   width: 25%;
+}
+
+.services-vps__item a {
+  width: 100%;
 }
 
 .services-content__list {
@@ -816,10 +831,14 @@ input[type=radio] {
   .services-cards__list {
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 50px;
+    gap: 50px;
   }
   .services-vps__list {
+    flex-wrap: wrap;
     gap: 30px;
+  }
+  .services-vps__item {
+    width: 45%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -834,9 +853,6 @@ input[type=radio] {
   }
   .services-vps__item {
     width: 200px;
-  }
-  .services-vps__item a {
-    width: 100%;
   }
 }
 .faq {

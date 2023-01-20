@@ -12,12 +12,20 @@
   display: block;
 }
 
+#servers_button:checked ~ .services-menu label[for="servers_button"],
+#hosting_button:checked ~ .services-menu label[for="hosting_button"],
+#cloud_button:checked ~ .services-menu label[for="cloud_button"],
+#services_button:checked ~ .services-menu label[for="services_button"] {
+  background-color: var(--primary-background-color);
+  color: var(--accent-color);
+  border-radius: 10px 10px 0 0;
+}
+
 input[type="radio"] {
   opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
-
   margin: 0;
 }
 
@@ -68,6 +76,10 @@ input[type="radio"] {
 
 // .services-menu__item:has(.services-menu__button:checked) .services-menu__label {
 //   color: var(--accent-color);
+// }
+
+// .services-menu__item--checked {
+//   background-color: var(--primary-background-color);
 // }
 
 .services-menu__label {
@@ -196,13 +208,17 @@ input[type="radio"] {
 }
 
 .services-vps__list {
-  gap: 60px;
+  gap: 80px;
   display: flex;
   justify-content: space-between;
 }
 
 .services-vps__item {
   width: 25%;
+}
+
+.services-vps__item a {
+  width: 100%;
 }
 
 .services-content__list {
@@ -228,15 +244,17 @@ input[type="radio"] {
   .services-cards__list {
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 50px;
+    gap: 50px;
   }
 
   .services-vps__list {
+    flex-wrap: wrap;
     gap: 30px;
   }
-  // .services-cards__item {
 
-  // }
+  .services-vps__item {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -254,9 +272,5 @@ input[type="radio"] {
 
   .services-vps__item {
     width: 200px;
-  }
-
-  .services-vps__item a {
-    width: 100%;
   }
 }
