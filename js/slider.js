@@ -64,8 +64,8 @@
 new Splide(".splide", {
   type: "loop",
   arrows: false,
-  autoplay: true,
-  interval: 3000,
+  // autoplay: true,
+  // interval: 3000,
   pauseOnFocus: true,
   pauseOnHover: true,
 }).mount();
