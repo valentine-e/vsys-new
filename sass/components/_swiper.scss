@@ -8,7 +8,7 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  flex-direction: row-reverse;
+  justify-content: end;
   display: flex;
   align-items: center;
   box-sizing: border-box;

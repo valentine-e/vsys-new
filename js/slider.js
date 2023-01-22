@@ -33,29 +33,39 @@
 
 //   moveLeft();
 // }
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
+// const swiper = new Swiper(".swiper", {
+//   // Optional parameters
+//   direction: "horizontal",
+//   loop: true,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+//   // If we need pagination
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
 
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
-});
+//   // And if we need scrollbar
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//   },
+
+//   autoplay: {
+//     delay: 3000,
+//     disableOnInteraction: true,
+//   },
+// });
+
+new Splide(".splide", {
+  type: "loop",
+  arrows: false,
+  autoplay: true,
+  interval: 3000,
+  pauseOnFocus: true,
+  pauseOnHover: true,
+}).mount();
