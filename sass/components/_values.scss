@@ -17,7 +17,11 @@
 }
 
 .values__content--2 {
-  width: 40%;
+  width: 10%;
+}
+
+.values__content--3 {
+  width: 30%;
 }
 
 .values__description {
@@ -32,7 +36,7 @@
 
 .values__item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
