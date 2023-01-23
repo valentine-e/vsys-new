@@ -572,7 +572,7 @@ img {
 }
 
 .hero__svg {
-  width: 100%;
+  width: 80%;
 }
 
 @media screen and (max-width: 1199px) {
@@ -586,8 +586,7 @@ img {
     display: flex;
   }
   .hero__image {
-    display: flex;
-    margin: 0 auto;
+    display: none;
   }
   .hero__thumb {
     flex-flow: column-reverse;
