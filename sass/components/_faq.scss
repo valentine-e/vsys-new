@@ -41,6 +41,7 @@
   align-items: center;
   padding: 10px 0;
   transition: color var(--timing-function), transform var(--timing-function);
+  cursor: pointer;
 
   &:focus .accordion__title {
     color: var(--accent-color);
