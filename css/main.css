@@ -1281,7 +1281,7 @@ input[type=radio] {
 .values__box {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
 }
 
 .values__content--1 {
@@ -1296,6 +1296,7 @@ input[type=radio] {
 }
 
 .values__content--3 {
+  padding-top: 30px;
   width: 30%;
 }
 
@@ -1303,10 +1304,16 @@ input[type=radio] {
   margin-bottom: 30px;
 }
 
-.values__list {
+.values__list--img {
   display: flex;
   flex-flow: column;
   gap: 20px;
+}
+
+.values__list--description {
+  display: flex;
+  flex-flow: column;
+  gap: 60px;
 }
 
 .values__item {
@@ -1316,7 +1323,6 @@ input[type=radio] {
 }
 
 .values__text {
-  width: 70%;
   font-size: 12px;
 }
 
