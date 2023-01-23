@@ -835,7 +835,7 @@ input[type=radio] {
     gap: 30px;
   }
   .services-vps__item {
-    width: 50%;
+    width: 45%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -852,6 +852,7 @@ input[type=radio] {
     gap: 40px;
   }
   .services-vps__item {
+    width: 60%;
     margin: 0 auto;
   }
 }
