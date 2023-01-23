@@ -220,6 +220,7 @@
     left: 0;
     top: 51px;
     width: 100vw;
+    height: calc(100vh - 51px);
     height: calc(100dvh - 51px);
     background: linear-gradient(
       180deg,

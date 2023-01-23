@@ -254,6 +254,12 @@ img {
     top: 0;
   }
 }
+.hotprice-gif {
+  position: absolute;
+  top: -50px;
+  left: -10px;
+}
+
 :root {
   --primary-font: "IBM Plex Sans", sans-serif;
   --logo-font: "Fira Sans Condensed", sans-serif;
@@ -466,6 +472,7 @@ img {
     left: 0;
     top: 51px;
     width: 100vw;
+    height: calc(100vh - 51px);
     height: calc(100dvh - 51px);
     background: linear-gradient(180deg, #191f32 2.92%, #305e8a 49.72%, #4aa7f0 97.41%);
     z-index: 1;
@@ -526,7 +533,7 @@ img {
 .hero__title {
   font-family: var(--title-font);
   font-weight: 900;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1.3;
   width: 100%;
   letter-spacing: 2px;
@@ -568,11 +575,10 @@ img {
   width: 100%;
 }
 
-.slider__controls {
-  display: none;
-}
-
 @media screen and (max-width: 1199px) {
+  .hero__title {
+    font-size: 36px;
+  }
   .hero {
     padding-bottom: 80px;
   }
