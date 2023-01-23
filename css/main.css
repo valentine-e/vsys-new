@@ -1342,7 +1342,7 @@ input[type=radio] {
   width: 50px;
   height: 45px;
   transform: translateY(-50%);
-  background-image: url(/images/value-illustration_1.svg);
+  background-image: url(../images/value-illustration_1.svg);
 }
 
 .values__text--before_2 {
@@ -1358,7 +1358,7 @@ input[type=radio] {
   width: 50px;
   height: 50px;
   transform: translateY(-50%);
-  background-image: url(/images/value-illustration_2.svg);
+  background-image: url(../images/value-illustration_2.svg);
 }
 
 .values__text--before_3 {
@@ -1374,7 +1374,7 @@ input[type=radio] {
   width: 50px;
   height: 52px;
   transform: translateY(-50%);
-  background-image: url(/images/value-illustration_3.svg);
+  background-image: url(../images/value-illustration_3.svg);
 }
 
 .values__text--before_4 {
@@ -1390,7 +1390,7 @@ input[type=radio] {
   width: 73px;
   height: 55px;
   transform: translateY(-50%);
-  background-image: url(/images/value-illustration_4.svg);
+  background-image: url(../images/value-illustration_4.svg);
 }
 
 .values__text--before_5 {
@@ -1406,7 +1406,7 @@ input[type=radio] {
   width: 83px;
   height: 57px;
   transform: translateY(-50%);
-  background-image: url(/images/value-illustration_5.svg);
+  background-image: url(../images/value-illustration_5.svg);
 }
 
 .values__content--3 {
