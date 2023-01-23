@@ -1,0 +1,119 @@
+.splide__pagination {
+  bottom: 12px;
+  left: inherit;
+  padding: 0;
+  position: absolute;
+  right: 120px;
+  z-index: 1;
+}
+
+.splide__pagination__page {
+  margin: 3px 8px;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+
+  .hero__svg {
+    width: 100%;
+  }
+
+  .hero__image {
+    margin: 0 auto 40px;
+  }
+
+  .splide__pagination {
+    top: -200px;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__image {
+    display: none;
+  }
+
+  .hero__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+
+  .hero__thumb {
+    margin-bottom: 30px;
+  }
+
+  .hero__thumb {
+    padding-bottom: 60px;
+    margin-bottom: 0;
+  }
+
+  .hero__description {
+    margin-bottom: 0;
+  }
+  .splide__pagination {
+    top: auto;
+    bottom: 125px;
+  }
+}
+
+// .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+// .swiper-pagination-horizontal.swiper-pagination-bullets
+//   .swiper-pagination-bullet {
+//   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
+// }
+
+// .swiper-horizontal > .swiper-pagination-bullets,
+// .swiper-pagination-bullets.swiper-pagination-horizontal,
+// .swiper-pagination-custom,
+// .swiper-pagination-fraction {
+//   justify-content: end;
+//   display: flex;
+//   align-items: center;
+//   box-sizing: border-box;
+//   padding-right: 100px;
+//   top: 78%;
+// }
+
+// .swiper-pagination-bullet {
+//   background: var(--swiper-pagination-bullet-inactive-color, #ffffff);
+//   opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.4);
+// }
+
+// .swiper-pagination-bullet-active {
+//   width: var(
+//     --swiper-pagination-bullet-width,
+//     var(--swiper-pagination-bullet-size, 12px)
+//   );
+//   height: var(
+//     --swiper-pagination-bullet-height,
+//     var(--swiper-pagination-bullet-size, 12px)
+//   );
+//   opacity: var(--swiper-pagination-bullet-opacity, 1);
+// }
+
+// .swiper {
+//   width: 1170px;
+//   min-height: fit-content;
+// }
+
+// @media screen and (max-width: 1199px) {
+//   .swiper {
+//     width: 767px;
+//   }
+
+//   .swiper-horizontal > .swiper-pagination-bullets,
+//   .swiper-pagination-bullets.swiper-pagination-horizontal,
+//   .swiper-pagination-custom,
+//   .swiper-pagination-fraction {
+//     bottom: 30px;
+//   }
+// }
+
+// @media screen and (max-width: 767px) {
+//   .swiper {
+//     width: 345px;
+//   }
+// }

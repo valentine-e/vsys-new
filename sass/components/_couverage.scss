@@ -107,10 +107,30 @@
   .couverage .section-title {
     margin-bottom: 30px;
   }
+
+  .couverage__marker--kyiv {
+    top: 13%;
+    right: 40%;
+  }
+
+  .couverage__marker--amsterdam {
+    top: 7%;
+    right: 59%;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .couverage {
     padding-bottom: 30px;
+  }
+
+  .couverage__marker--kyiv {
+    top: -2%;
+    right: 38%;
+  }
+
+  .couverage__marker--amsterdam {
+    top: -8%;
+    right: 56%;
   }
 }

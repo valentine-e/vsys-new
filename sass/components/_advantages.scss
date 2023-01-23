@@ -52,6 +52,16 @@
 }
 
 @media screen and (max-width: 767px) {
+  .advantages-steps {
+    flex-flow: column;
+    margin-bottom: 30px;
+  }
+
+  .advantages-steps img {
+    margin: 0 auto 30px;
+    width: 50%;
+  }
+
   .advantages-steps .section-title {
     text-align: center;
   }

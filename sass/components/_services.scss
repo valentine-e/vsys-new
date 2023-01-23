@@ -253,7 +253,7 @@ input[type="radio"] {
   }
 
   .services-vps__item {
-    width: 45%;
+    width: 50%;
   }
 }
 
@@ -267,10 +267,13 @@ input[type="radio"] {
   }
 
   .services-vps__list {
+    width: 100%;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 40px;
   }
 
   .services-vps__item {
-    width: 200px;
+    margin: 0 auto;
   }
 }
