@@ -215,14 +215,13 @@
   }
 
   .mobile-menu {
-    box-sizing: border-box;
     position: fixed;
     overflow-y: scroll;
     left: 0;
     top: 51px;
     width: 100vw;
-    height: calc(100vh - 51px);
-
+    // height: 100%;
+    height: calc(100dvh - 51px);
     background: linear-gradient(
       180deg,
       #191f32 2.92%,
@@ -232,6 +231,7 @@
     z-index: 1;
     opacity: 0;
     padding-top: 30px;
+    padding-bottom: 30px;
     transition: transform var(--timing-function), opacity var(--timing-function);
     pointer-events: none;
 
@@ -246,7 +246,7 @@
       padding-right: 15px;
       margin-left: auto;
       margin-right: auto;
-      box-sizing: border-box;
+
       align-items: center;
     }
 
