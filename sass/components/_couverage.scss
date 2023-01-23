@@ -45,8 +45,8 @@
 }
 
 .couverage__marker--seattle {
-  bottom: 57%;
-  left: 3%;
+  bottom: 61%;
+  left: 1%;
 }
 
 @keyframes pulsate-bck {
@@ -132,5 +132,9 @@
   .couverage__marker--amsterdam {
     top: -8%;
     right: 56%;
+  }
+
+  .couverage__marker--seattle {
+    left: -1%;
   }
 }

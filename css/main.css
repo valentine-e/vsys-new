@@ -1445,14 +1445,14 @@ input[type=radio] {
 }
 
 @media screen and (max-width: 1199px) {
+  .values__content--1 {
+    width: 50%;
+  }
+  .values__box {
+    gap: 120px;
+  }
   .values__list {
     gap: 30px;
-  }
-  .values__content--1 {
-    width: 100%;
-  }
-  .values__content--2 {
-    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1591,8 +1591,8 @@ input[type=radio] {
 }
 
 .couverage__marker--seattle {
-  bottom: 57%;
-  left: 3%;
+  bottom: 61%;
+  left: 1%;
 }
 
 @keyframes pulsate-bck {
@@ -1663,6 +1663,9 @@ input[type=radio] {
   .couverage__marker--amsterdam {
     top: -8%;
     right: 56%;
+  }
+  .couverage__marker--seattle {
+    left: -1%;
   }
 }
 .splide__pagination {
