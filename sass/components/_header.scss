@@ -28,7 +28,6 @@
   color: var(--secondary-text-color);
   position: relative;
   white-space: nowrap;
-  text-decoration: underline;
   display: flex;
   align-items: center;
   transition: color var(--timing-function);
@@ -115,7 +114,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 60%;
 }
 
 .navbar__item {
@@ -132,6 +130,11 @@
 
   position: relative;
   white-space: nowrap;
+}
+
+.vsys-logo:hover {
+  color: var(--secondary-text-color);
+  text-decoration: none;
 }
 
 .vsys-logo__virtual {
@@ -184,7 +187,7 @@
 }
 
 .mobile-menu {
-  width: 60%;
+  width: 70%;
 }
 
 .mobile-menu__buttons {
@@ -198,6 +201,12 @@
 
   .mobile-menu {
     width: 100%;
+    flex-basis: fit-content;
+  }
+
+  .vsys-logo,
+  .vsys-logo__virtual {
+    font-size: 12px;
   }
 }
 
@@ -258,7 +267,7 @@
       pointer-events: all;
     }
 
-    .mobile-menu__container {
+    .mobile-menu__vsys-container {
       padding-left: 60px;
       padding-right: 60px;
     }

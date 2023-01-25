@@ -13,12 +13,26 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 a {
   color: var(--primary-text-color);
   text-decoration: none;
   display: block;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 img {
@@ -26,7 +40,15 @@ img {
   height: auto;
 }
 
-.container {
+p {
+  margin: 0;
+}
+
+label {
+  margin: 0;
+}
+
+.vsys-container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -135,16 +157,17 @@ img {
   border: none;
   background-color: transparent;
   color: var(--secondary-text-color);
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 500;
   padding: 15px 5px;
   align-items: center;
   display: flex;
   transition: color var(--timing-function);
-
   &:hover,
   &:focus {
     color: var(--accent-color);
+    outline: none;
   }
 }
 
@@ -198,7 +221,7 @@ img {
   &:hover,
   &:focus {
     color: var(--accent-color);
-    // background-color: var(--light-blue-text);
+    text-decoration: none;
     border-color: var(--light-blue-text);
   }
 }
@@ -208,6 +231,10 @@ img {
   background-color: var(--primary-background-color);
   color: var(--accent-color);
   border: 1px solid #88c8fa;
+}
+
+.button--border {
+  border: none;
 }
 
 .button--light:hover,
@@ -256,6 +283,12 @@ img {
   &:focus {
     background-color: var(--light-blue-text);
     color: var(--secondary-background-color);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .dropdown__button {
+    font-size: 12px;
   }
 }
 

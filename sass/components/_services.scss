@@ -167,22 +167,13 @@ input[type="radio"] {
   opacity: 1;
 }
 
+.services-cards__checkmark {
+  font-size: 18px;
+}
+
 .serversContent {
   width: 100%;
 }
-
-// .services-cards__button--white {
-//   font-family: var(--buttons-font);
-//   color: var(--primary-background-color);
-//   background-color: var(--accent-color);
-//   outline: 1px solid var(--primary-background-color);
-
-//   &:hover {
-//     color: var(--accent-color);
-//     background-color: var(--primary-background-color);
-//     outline: 1px solid var(--accent-color);
-//   }
-// }
 
 .services-dedicated__title {
   display: flex;

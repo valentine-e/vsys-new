@@ -1,0 +1,39 @@
+.hero-dedicated {
+  padding-bottom: 60px;
+}
+
+.hero-dedicated__list {
+  list-style: disc;
+  color: var(--secondary-text-color);
+  padding-left: 20px;
+}
+
+.hero-dedicated__text {
+  color: var(--secondary-text-color);
+  font-size: 24px;
+}
+
+.hero-dedicated__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.hero-dedicated__svg {
+  width: 90%;
+}
+
+.dedicated-faq__background {
+  background-image: url(/images/dedicated-faq_background.svg);
+}
+
+.dedicated-services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.dedicated-services .services-vps__list {
+  margin-bottom: 60px;
+}
+
+.dedicated-services .services-card__list {
+  margin-bottom: 0;
+}

@@ -1,0 +1,38 @@
+.dedicated-contact .section-title {
+  margin-bottom: 30px;
+}
+
+.dedicated-contact__background {
+  background: linear-gradient(
+    165.95deg,
+    rgba(74, 167, 240, 0.76) 10.01%,
+    #e0f1ff 101.3%
+  );
+  position: relative;
+}
+
+.dedicated-contact__background--svg {
+  background-image: url(/images/dedicated-background__image.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  bottom: 0;
+}
+
+.dedicated-contact__content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .dedicated-contact .section-title {
+    text-align: center;
+  }
+  .dedicated-contact__content {
+    flex-flow: column;
+    gap: 30px;
+  }
+}
