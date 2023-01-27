@@ -8,6 +8,29 @@
   gap: 60px;
 }
 
+.dedicated-agvantages__image {
+  width: 300px;
+  order: 2;
+}
+
 .dedicated-agvantages__description {
   font-size: 16px;
+  order: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .dedicated-agvantages__content {
+    flex-flow: column;
+    gap: 30px;
+  }
+
+  .dedicated-agvantages__image {
+    margin: 0 auto;
+    width: 200px;
+    order: 1;
+  }
+
+  .dedicated-agvantages__description {
+    order: 2;
+  }
 }

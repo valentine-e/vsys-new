@@ -56,3 +56,14 @@
 .services-cards__list--jc {
   justify-content: center;
 }
+
+@media screen and (max-width: 1199px) {
+  .nvme-data__list {
+    flex-flow: column;
+    gap: 30px;
+  }
+
+  .nvme-data__item {
+    width: 100%;
+  }
+}

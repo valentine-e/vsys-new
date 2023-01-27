@@ -36,3 +36,10 @@
     gap: 30px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .dedicated-contact__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

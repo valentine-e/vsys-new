@@ -267,9 +267,9 @@
       pointer-events: all;
     }
 
-    .mobile-menu__vsys-container {
-      padding-left: 60px;
-      padding-right: 60px;
+    .mobile-menu__container {
+      width: fit-content;
+      margin: 0 auto;
     }
 
     .navbar__list {

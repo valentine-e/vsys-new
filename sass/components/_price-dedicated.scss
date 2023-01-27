@@ -3,6 +3,22 @@
   padding-bottom: 60px;
 }
 
+.price-dedicated__container {
+  gap: 30px;
+  display: flex;
+  margin-bottom: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-billing__item {
+  transition: filter var(--timing-function);
+}
+
+.price-billing__item:hover {
+  filter: drop-shadow(0px 11px 5px rgba(0, 0, 0, 0.15));
+}
+
 .price-dedicated__card {
   background-color: var(--price-card-bcg);
   border-radius: 10px;
@@ -67,21 +83,6 @@
 .price-dedicated__card:hover {
   filter: drop-shadow(0px 5px 11px rgba(0, 0, 0, 0.3));
   transform: scale(1.02);
-}
-
-.price-billing__buttons {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  margin-bottom: 60px;
-}
-
-.price-billing__item {
-  transition: filter var(--timing-function);
-}
-
-.price-billing__item:hover {
-  filter: drop-shadow(0px 11px 5px rgba(0, 0, 0, 0.15));
 }
 
 .price-billing__button {
@@ -158,23 +159,36 @@
   // text-decoration-color: red;
 }
 
+.price-dedicated__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.price-billing__buttons {
+  display: flex;
+}
+
 @media screen and (max-width: 1199px) {
-  .price-billing__buttons {
-    justify-content: space-between;
+  .price-dedicated__content > .section-subtitle {
+    width: 150px;
+  }
+
+  .price-dedicated__container {
+    row-gap: 30px;
+    flex-flow: column;
+  }
+
+  .price-dedicated__content {
+    margin: 0 auto 0 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .price-billing__buttons {
-    flex-wrap: wrap;
-  }
-
-  .price-billing__buttons .section-subtitle {
+  .price-dedicated__content {
     width: 100%;
-  }
-
-  .price-billing__buttons {
-    justify-content: space-around;
+    flex-flow: column;
   }
 
   .price-dedicated__card {
@@ -198,5 +212,13 @@
 
   .price-dedicated__tariff {
     width: 100%;
+  }
+
+  .price-billing__button {
+    padding: 5px 10px;
+  }
+
+  .price-billing__button .section-subtitle {
+    font-size: 12px;
   }
 }
