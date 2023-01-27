@@ -2131,4 +2131,16 @@ input[type=radio] {
   .nvme-data__item {
     width: 100%;
   }
+  .nvme-ssd__content {
+    flex-flow: column;
+  }
+  .nvme-ssd__box {
+    width: 100%;
+  }
+  .nvme-ssd__image {
+    width: 150px;
+  }
+  .nvme-ssd__list {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
