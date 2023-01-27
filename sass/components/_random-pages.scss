@@ -57,7 +57,7 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .nvme-data__list {
     flex-flow: column;
     gap: 30px;
