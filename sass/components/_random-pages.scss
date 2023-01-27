@@ -1,0 +1,58 @@
+.nvme-ssd .section-title {
+  margin-bottom: 30px;
+}
+
+.nvme-data {
+  padding-bottom: 60px;
+}
+
+.price-billing__buttons--gap {
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.nvme-data__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nvme-data__item {
+  width: 20%;
+}
+
+.nvme-data__description {
+  text-align: center;
+}
+
+.nvme-ssd {
+  padding-bottom: 60px;
+}
+
+.nvme-ssd__box {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+}
+.nvme-ssd__list {
+  width: 50%;
+}
+
+.nvme-ssd__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nvme-ssd .bonuses__item {
+  width: 100%;
+}
+
+.nvme-ssd__image {
+  margin: 0 auto;
+}
+
+.services-cards__list--jc {
+  justify-content: center;
+}

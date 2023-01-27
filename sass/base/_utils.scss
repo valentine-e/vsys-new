@@ -221,7 +221,20 @@ label {
   &:hover,
   &:focus {
     color: var(--accent-color);
-    text-decoration: none;
+
+    border-color: var(--light-blue-text);
+  }
+}
+
+.button--red {
+  color: #f26666;
+  border: 1px solid #f26666;
+  background-color: var(--primary-background-color);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-text-color);
+    background-color: #f26666;
     border-color: var(--light-blue-text);
   }
 }
