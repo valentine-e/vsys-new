@@ -1,3 +1,15 @@
+.dedicated-hero {
+  background: linear-gradient(
+    165.95deg,
+    rgba(74, 167, 240, 0.76) 10.01%,
+    #e0f1ff 101.3%
+  );
+  padding-top: 100px;
+}
+.dedicated-hero__background {
+  background-image: url(/images/dedicated-background__image.svg);
+}
+
 .hero-dedicated {
   padding-bottom: 60px;
 }
@@ -5,7 +17,7 @@
 .hero-dedicated__list {
   list-style: disc;
   color: var(--secondary-text-color);
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 .hero-dedicated__text {
@@ -36,4 +48,25 @@
 
 .dedicated-services__list {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-dedicated__text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-dedicated__text {
+    font-size: 16px;
+  }
+
+  .dedicated-hero {
+    .hero {
+      padding-bottom: 60px;
+    }
+    .hero__thumb {
+      padding-bottom: 0;
+    }
+  }
 }

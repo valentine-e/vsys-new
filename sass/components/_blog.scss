@@ -1,0 +1,26 @@
+.article-card__list {
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  gap: 60px;
+}
+
+.article-card__item {
+  height: fit-content;
+  width: 30%;
+}
+
+.article-card__link {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.article-card__title {
+  text-transform: inherit;
+}
+
+.article-card__image {
+  width: 100%;
+}

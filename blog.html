@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/splide.min.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://dev.vsys.host/templates/twenty-one/css/all.min.css?v=a44b3b"
+      rel="stylesheet"
+    />
+    <link
+      href="https://dev.vsys.host/templates/twenty-one/css/theme.min.css?v=a44b3b"
+      rel="stylesheet"
+    />
+    <link
+      href="https://dev.vsys.host/assets/css/fontawesome-all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header class="page-header">
+      <!-- Topbar  -->
+
+      <div class="vsys-container">
+        <div class="topbar">
+          <div class="topbar-quality">
+            <a class="topbar-quality__link" href="#">
+              <svg class="topbar-quality__svg" width="40" height="40">
+                <use href="./images/sprite.svg#quality-badge"></use>
+              </svg>
+              <p class="topbar-quality__title">
+                TRUSTED HOSTING PROVIDER SINCE 2009
+              </p>
+              <span class="menu-arrow--right"></span>
+            </a>
+          </div>
+
+          <ul class="topbar-buttons">
+            <li class="navbar__item">
+              <a
+                class="dropdown__button button button--sm button--white"
+                href="#"
+                >CONTACT US<span class="menu-arrow"></span
+              ></a>
+              <ul class="dropdown__menu dropdown--mt14 dropdown__menu--white">
+                <li>
+                  <a class="dropdown__link dropdown__link--black" href="#"
+                    >OPEN A NEW SUPPORT TICKET</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown__link dropdown__link--black" href="#"
+                    >CONTACT US FORM</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown__link dropdown__link--black" href="#"
+                    >LIVE CHAT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown__link dropdown__link--black" href="#"
+                    >E-MAIL: INFO@VSYS.HOST</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown__link dropdown__link--black" href="#"
+                    >TEL: +380 (44) 591-5679</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="topbar__item">
+              <button class="button button--transparent button--sm">
+                LOGIN
+              </button>
+            </li>
+
+            <li class="navbar__item">
+              <a class="dropdown__button button--lang">
+                <svg class="planet-icon" width="40" height="40">
+                  <use href="./images/sprite.svg#planet-icon"></use>
+                </svg>
+                English <span class="menu-arrow"></span>
+              </a>
+              <ul
+                class="dropdown__menu dropdown__menu--lang dropdown__menu--white"
+              >
+                <li>
+                  <a class="dropdown__link dropdown__link--black" href="#"
+                    >UA</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown__link dropdown__link--black" href="#"
+                    >Русский</a
+                  >
+                </li>
+                <li></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="topbar--bottomline"></div>
+
+      <!-- Navbar -->
+
+      <div class="vsys-container">
+        <div class="navbar">
+          <a class="vsys-logo vsys-logo--christmas-hat" href="#">
+            <span class="vsys-logo__virtual">virtual </span>systems</a
+          >
+
+          <button class="menu-button" type="button" data-menu-button>
+            <svg width="40px" height="40px">
+              <use
+                class="icon-close"
+                href="images/sprite.svg#header-menu-close-icon"
+              ></use>
+              <use
+                class="icon-menu"
+                href="images/sprite.svg#header-menu-icon"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu" id="mobile-menu" data-menu>
+            <ul class="navbar__list mobile-menu__container">
+              <li class="navbar__item">
+                <button class="dropdown__button">
+                  Servers<span class="menu-arrow"></span>
+                </button>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navbar__item">
+                <button class="dropdown__button">
+                  VPS<span class="menu-arrow"></span>
+                </button>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navbar__item">
+                <a class="dropdown__button" href="#">Hosting</a>
+              </li>
+
+              <li class="navbar__item">
+                <button class="dropdown__button" href="#">
+                  Cloud<span class="menu-arrow"></span>
+                </button>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navbar__item">
+                <button class="dropdown__button" href="#">
+                  Services<span class="menu-arrow"></span>
+                </button>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navbar__item">
+                <button class="dropdown__button" href="#">
+                  Solutions<span class="menu-arrow"></span>
+                </button>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navbar__item">
+                <button class="dropdown__button" href="#">
+                  Company<span class="menu-arrow"></span>
+                </button>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navbar__item">
+                <button class="dropdown__button" href="#">
+                  Recources<span class="menu-arrow"></span>
+                </button>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a class="dropdown__link" href="#">OFFSHORE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#"
+                      >SERVERS IN THE NETHERLANDS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SERVERS IN THE USA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">10 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">20 GBPS SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STREAMING SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">GPU SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">NVME DEDICATED SERVER</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">STORAGE SERVERS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown__link" href="#">SSD STORAGE SERVERS</a>
+                  </li>
+                </ul>
+              </li>
+
+              <div class="mobile-menu__buttons">
+                <button class="button button--transparent button--sm">
+                  LOGIN
+                </button>
+
+                <div class="navbar__item navbar__item--width">
+                  <a class="dropdown__button button--lang">
+                    <svg class="planet-icon" width="40" height="40">
+                      <use href="./images/sprite.svg#planet-icon"></use>
+                    </svg>
+                    English <span class="menu-arrow"></span>
+                  </a>
+                  <ul
+                    class="dropdown__menu dropdown__menu--lang dropdown__menu--white"
+                  >
+                    <li>
+                      <a class="dropdown__link dropdown__link--black" href="#"
+                        >UA</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown__link dropdown__link--black" href="#"
+                        >Русский</a
+                      >
+                    </li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="vsys-container">
+        <h1 class="hero__title section-title--gradient">READ OUR BLOG</h1>
+
+        <section>
+          <ul class="article-card__list">
+            <li class="article-card__item">
+              <a class="article-card__link" href="#"
+                ><article>
+                  <img
+                    class="article-card__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                </article>
+                <h3 class="section-subtitle">What is unlimited bandwidth?</h3>
+                <p class="article-card__text">
+                  Christmas is a time of giving, and we’d like to give you a
+                  huge thanks for being our cherished customer. We hope your
+                  dreams come true this Christmas and The New Year, as you’ve
+                  made our dreams come true this year by simply being our
+                  customer. Have a happy, happy holiday season, and we look
+                  forward to working with you in the New Year. Please accept our
+                  warmest and sincere wishes on behalf of the VSYS Host Team!
+                </p>
+              </a>
+            </li>
+
+            <li class="article-card__item">
+              <a class="article-card__link" href="#"
+                ><article>
+                  <img
+                    class="article-card__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                </article>
+                <h3 class="section-subtitle">
+                  MERRY CHRISTMAS AND HAPPY NEW YEAR 2023
+                </h3>
+                <p class="article-card__text">
+                  Christmas is a time of giving, and we’d like to give you a
+                  huge thanks for being our cherished customer. We hope your
+                  dreams come true this Christmas and The New Year, as you’ve
+                  made our dreams come true this year by simply being our
+                  customer. Have a happy, happy holiday season, and we look
+                  forward to working with you in the New Year. Please accept our
+                  warmest and sincere wishes on behalf of the VSYS Host Team!
+                </p>
+              </a>
+            </li>
+
+            <li class="article-card__item">
+              <a class="article-card__link" href="#"
+                ><article>
+                  <img
+                    class="article-card__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                </article>
+                <h3 class="section-subtitle">
+                  CHRISTMAS SPECIALS FROM THE VSYS HOST
+                </h3>
+                <p class="article-card__text">
+                  Christmas is a time of giving, and we’d like to give you a
+                  huge thanks for being our cherished customer. We hope your
+                  dreams come true this Christmas and The New Year, as you’ve
+                  made our dreams come true this year by simply being our
+                  customer. Have a happy, happy holiday season, and we look
+                  forward to working with you in the New Year. Please accept our
+                  warmest and sincere wishes on behalf of the VSYS Host Team!
+                </p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer class="vsys-footer">
+      <div class="vsys-container">
+        <a class="vsys-logo" href="#">
+          <span class="vsys-logo__virtual">virtual </span>systems</a
+        >
+
+        <div class="footer__content">
+          <div class="footer__info">
+            <p class="footer__description">
+              Virtual Systems - offshore anonymous web hosting. We protect from
+              shutdowns, keep your website online & your identity private. Join
+              us for hassle-free website hosting experience!
+            </p>
+
+            <address>
+              <ul>
+                <li class="footer-contact__item">
+                  <a class="footer-contact__link" href="#"
+                    >Dehtyarivska street 4-A, office <br />
+                    505, Kyiv 04050, Ukraine</a
+                  >
+                </li>
+                <li class="footer-contact__item">
+                  <a class="footer-contact__link" href="tel:+380445915679"
+                    >+38 (044) 591-56-79</a
+                  >
+                </li>
+                <li class="footer-contact__item">
+                  <a class="footer-contact__link" href="mailto:info@v-sys.org"
+                    >info@v-sys.org</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-nav">
+            <div class="footer__box">
+              <h3 class="section-subtitle footer__subtitle">SERVICES</h3>
+              <ul>
+                <li><a class="footer-nav__link" href="#">Web hosting</a></li>
+                <li><a class="footer-nav__link" href="#">VPS hosting</a></li>
+                <li><a class="footer-nav__link" href="#">Dedicatet</a></li>
+                <li><a class="footer-nav__link" href="#">Anti-DDoS</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__box">
+              <h3 class="section-subtitle footer__subtitle">COMPANY</h3>
+              <ul>
+                <li><a class="footer-nav__link" href="#">Abut us</a></li>
+                <li>
+                  <a class="footer-nav__link" href="#">Terms of service </a>
+                </li>
+                <li><a class="footer-nav__link" href="#">Privacy policy</a></li>
+                <li><a class="footer-nav__link" href="#">Anti-DDoS</a></li>
+              </ul>
+            </div>
+
+            <div class="footer__box">
+              <h3 class="section-subtitle footer__subtitle">SERVICES</h3>
+              <ul>
+                <li>
+                  <a class="footer-nav__link" href="#">Terms of service </a>
+                </li>
+                <li><a class="footer-nav__link" href="#">VPS hosting</a></li>
+                <li><a class="footer-nav__link" href="#">Dedicatet</a></li>
+                <li><a class="footer-nav__link" href="#">Web hosting</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__thumb">
+          <ul class="footer-social__list">
+            <li>
+              <a class="footer-social__link" href="#"
+                ><svg class="footer-social__svg" width="24px" height="24px">
+                  <use
+                    class="footer-social__svg--color"
+                    href="./images/sprite.svg#github-icon"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="footer-social__link" href="#"
+                ><svg class="footer-social__svg" width="24px" height="24px">
+                  <use
+                    class="footer-social__svg--color"
+                    href="./images/sprite.svg#linkedin-icon"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="footer-social__link" href="#"
+                ><svg class="footer-social__svg" width="16px" height="28px">
+                  <use
+                    class="footer-social__svg--color"
+                    href="./images/sprite.svg#facebook-icon"
+                  ></use></svg
+              ></a>
+            </li>
+            <li>
+              <a class="footer-social__link" href="#"
+                ><svg class="footer-social__svg" width="28px" height="23px">
+                  <use
+                    class="footer-social__svg--color"
+                    href="./images/sprite.svg#twitter-icon"
+                  ></use></svg
+              ></a>
+            </li>
+          </ul>
+
+          <ul class="footer-payment__list">
+            <h3 class="section-subtitle footer__subtitle">Payment system</h3>
+            <li class="footer-payment__item">
+              <svg class="footer-payment__img">
+                <use href="./images/sprite.svg#payment-bitcoin"></use>
+              </svg>
+            </li>
+            <li class="footer-payment__item">
+              <svg class="footer-payment__img">
+                <use href="./images/sprite.svg#payment-paypal"></use>
+              </svg>
+            </li>
+            <li class="footer-payment__item">
+              <svg class="footer-payment__img">
+                <use href="./images/sprite.svg#payment-bank-transfer"></use>
+              </svg>
+            </li>
+            <li class="footer-payment__item">
+              <svg class="footer-payment__img">
+                <use href="./images/sprite.svg#payment-webmoney"></use>
+              </svg>
+            </li>
+            <li class="footer-payment__item">
+              <svg class="footer-payment__img">
+                <use href="./images/sprite.svg#payment-visa"></use>
+              </svg>
+            </li>
+            <li class="footer-payment__item">
+              <svg class="footer-payment__img">
+                <use href="./images/sprite.svg#payment-mastercard"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
