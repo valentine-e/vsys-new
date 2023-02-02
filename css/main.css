@@ -2165,6 +2165,10 @@ input[type=radio] {
     width: 100%;
   }
 }
+.blog__title {
+  margin-top: 60px;
+}
+
 .article-card__list {
   justify-content: space-between;
   padding-top: 60px;
