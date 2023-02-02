@@ -2,29 +2,113 @@
   margin-top: 60px;
 }
 
-.article-card__list {
+.main-blog__list {
   justify-content: space-between;
-  padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
-  gap: 60px;
 }
 
-.article-card__item {
-  height: fit-content;
+.main-blog__item {
+  display: flex;
   width: 30%;
+  justify-content: space-between;
+  background-color: var(--price-card-bcg);
+  transition: box-shadow var(--timing-function),
+    transform var(--timing-function);
+  filter: drop-shadow(0px 5px 11px rgba(0, 0, 0, 0.15));
 }
 
-.article-card__link {
+.main-blog__item:hover {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+  transform: scale(1.02);
+}
+
+.main-blog__item:hover .main-blog__text {
+  transform: translateY(0);
+}
+
+.main-blog__description {
+  overflow: hidden;
+  position: relative;
+}
+
+.main-blog__thumb {
   display: flex;
   flex-flow: column;
-  gap: 20px;
+  gap: 10px;
+  padding: 0 10px 10px;
 }
 
-.article-card__title {
+.main-blog__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-blog__author {
+  width: 100%;
+}
+
+.main-blog__text {
+  display: flex;
+  background-color: var(--primary-background-color);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform var(--timing-function);
+}
+
+.main-blog__title {
   text-transform: inherit;
 }
 
-.article-card__image {
+.main-blog__image {
   width: 100%;
+}
+
+.tag__list {
+  display: flex;
+  flex-flow: wrap;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.tag__item {
+  background-color: var(--price-card-bcg);
+  // transition: outline var(--timing-function);
+}
+
+.tag__link {
+  height: 100%;
+  font-size: 14px;
+  color: var(--accent-color);
+  padding: 5px 10px;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.tag__item:hover {
+  outline: 1px solid var(--accent-color);
+}
+
+.tag__subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.blog-article__list {
+  flex-flow: wrap;
+  row-gap: 30px;
+}
+
+.blog-article__item {
+  width: 22%;
 }

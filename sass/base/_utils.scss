@@ -26,7 +26,6 @@ h6 {
 }
 
 a {
-  color: var(--primary-text-color);
   text-decoration: none;
   display: block;
 
@@ -123,6 +122,10 @@ button:focus {
 
 .menu-arrow--right {
   transform: rotate(-90deg);
+}
+
+.menu-arrow--left {
+  transform: rotate(90deg);
 }
 
 .text--lightblue {
