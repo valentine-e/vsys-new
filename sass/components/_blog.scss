@@ -84,11 +84,15 @@
 // }
 
 .main-blog__text {
+<<<<<<< HEAD
   display: flex;
   color: var(--primary-text-color);
   // background-color: var(--primary-background-color);
   overflow: hidden;
   justify-content: center;
+=======
+  background-color: var(--primary-background-color);
+>>>>>>> fcc9d843835a581e362d574b59d3beae50d32521
   position: absolute;
   padding: 10px;
   height: 100%;
