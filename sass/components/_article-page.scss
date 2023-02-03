@@ -3,6 +3,7 @@
 }
 
 .article-page__image {
+  width: 50%;
   float: left;
   margin-right: 30px;
   margin-bottom: 20px;
@@ -68,4 +69,27 @@
 .share-article__list {
   display: flex;
   gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .share-article__content {
+    gap: 10px;
+  }
+
+  .share-article__list {
+    gap: 10px;
+  }
+
+  .article-page__label {
+    font-size: 12px;
+  }
+
+  .article-page__image {
+    width: 100%;
+    float: none;
+  }
+
+  .article-page__subtitle {
+    text-align: center;
+  }
 }

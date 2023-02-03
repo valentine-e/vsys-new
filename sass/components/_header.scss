@@ -39,6 +39,10 @@
   }
 }
 
+// .topbar-quality__title {
+//   text-decoration: underline;
+// }
+
 .topbar-quality__svg {
   fill: transparent;
   transform: scale(0.8);
@@ -290,9 +294,10 @@
   }
 
   .mobile-menu__buttons {
-    width: 100%;
-    display: flex;
+    width: 237px;
     justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
     margin-top: 20px;
     align-items: center;
   }

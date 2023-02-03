@@ -237,7 +237,7 @@
               </li>
 
               <li class="navbar__item">
-                <button class="dropdown__button" href="#">
+                <button class="dropdown__button">
                   Cloud<span class="menu-arrow"></span>
                 </button>
                 <ul class="dropdown__menu">
@@ -277,7 +277,7 @@
               </li>
 
               <li class="navbar__item">
-                <button class="dropdown__button" href="#">
+                <button class="dropdown__button">
                   Services<span class="menu-arrow"></span>
                 </button>
                 <ul class="dropdown__menu">
@@ -317,7 +317,7 @@
               </li>
 
               <li class="navbar__item">
-                <button class="dropdown__button" href="#">
+                <button class="dropdown__button">
                   Solutions<span class="menu-arrow"></span>
                 </button>
                 <ul class="dropdown__menu">
@@ -357,7 +357,7 @@
               </li>
 
               <li class="navbar__item">
-                <button class="dropdown__button" href="#">
+                <button class="dropdown__button">
                   Company<span class="menu-arrow"></span>
                 </button>
                 <ul class="dropdown__menu">
@@ -397,7 +397,7 @@
               </li>
 
               <li class="navbar__item">
-                <button class="dropdown__button" href="#">
+                <button class="dropdown__button">
                   Recources<span class="menu-arrow"></span>
                 </button>
                 <ul class="dropdown__menu">
@@ -435,41 +435,42 @@
                   </li>
                 </ul>
               </li>
-
-              <div class="mobile-menu__buttons">
-                <button class="button button--transparent button--sm">
-                  LOGIN
-                </button>
-
-                <div class="navbar__item navbar__item--width">
-                  <a class="dropdown__button button--lang">
-                    <svg class="planet-icon" width="40" height="40">
-                      <use href="./images/sprite.svg#planet-icon"></use>
-                    </svg>
-                    English <span class="menu-arrow"></span>
-                  </a>
-                  <ul
-                    class="dropdown__menu dropdown__menu--lang dropdown__menu--white"
-                  >
-                    <li>
-                      <a class="dropdown__link dropdown__link--black" href="#"
-                        >UA</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown__link dropdown__link--black" href="#"
-                        >Русский</a
-                      >
-                    </li>
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
             </ul>
+
+            <div class="mobile-menu__buttons">
+              <button class="button button--transparent button--sm">
+                LOGIN
+              </button>
+
+              <div class="navbar__item navbar__item--width">
+                <a class="dropdown__button button--lang">
+                  <svg class="planet-icon" width="40" height="40">
+                    <use href="./images/sprite.svg#planet-icon"></use>
+                  </svg>
+                  English <span class="menu-arrow"></span>
+                </a>
+                <ul
+                  class="dropdown__menu dropdown__menu--lang dropdown__menu--white"
+                >
+                  <li>
+                    <a class="dropdown__link dropdown__link--black" href="#"
+                      >UA</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link dropdown__link--black" href="#"
+                      >Русский</a
+                    >
+                  </li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
+
     <main class="vsys-container">
       <div>
         <a class="author-page__breadcrumbs" href="./blog.html"
@@ -478,7 +479,7 @@
         >
       </div>
 
-      <div class="author__section">
+      <section class="author__section">
         <div class="author__content">
           <img
             class="author-section__image"
@@ -490,10 +491,13 @@
           >
             joanne rowling
           </h2>
-          <p class="author-section__label">author</p>
+          <div class="author-section__info">
+            <p class="author-section__label">author</p>
+            <p class="author__label">4 articles</p>
+          </div>
         </div>
 
-        <div class="author__info">
+        <div class="author-section__description">
           <p>
             Sereda Stas has an impressive mixture of technical education and
             practical work experience. In brief, Stas is responsible for the
@@ -505,7 +509,7 @@
             administration, and security simultaneously.
           </p>
         </div>
-      </div>
+      </section>
 
       <ul class="main-blog__list author-section__list">
         <li class="main-blog__item author-section__link">

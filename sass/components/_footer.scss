@@ -47,11 +47,12 @@
 }
 
 .footer__subtitle {
+  color: var(--secondary-text-color);
   font-family: var(--title-font);
   font-size: 16px;
   font-weight: 700;
-  // font-weight: 800;
-  color: var(--secondary-text-color);
+  align-items: center;
+  display: flex;
 }
 
 .footer-nav__link {
@@ -75,7 +76,6 @@
 .footer__thumb {
   display: flex;
   justify-content: space-between;
-  gap: 30%;
   margin-top: 30px;
 }
 
@@ -114,10 +114,8 @@
 }
 
 .footer-payment__list {
-  min-width: 45%;
   display: flex;
   gap: 10px;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -130,7 +128,12 @@
   height: 45px;
 }
 
-.footer-payment > .footer__subtitle {
+.footer-payment__content {
+  display: flex;
+}
+
+.footer-payment__content > .footer__subtitle {
+  margin-right: 46px;
   width: 70px;
   align-items: center;
   font-size: 14px;
@@ -138,12 +141,30 @@
 
 @media screen and (max-width: 1199px) {
   .footer__content {
-    flex-flow: column;
-    gap: 30px;
+    gap: 3%;
+  }
+
+  .footer__info {
+    width: 35%;
+  }
+
+  .footer-nav {
+    min-width: 55%;
+  }
+
+  .footer__box {
+    width: 30%;
+  }
+
+  .footer-payment__content {
+    justify-content: space-between;
+  }
+
+  .footer-payment__content > .footer__subtitle {
+    margin-right: 15px;
   }
 
   .footer__thumb {
-    flex-flow: column;
     gap: 30px;
   }
 
@@ -166,34 +187,31 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer-payment {
-    row-gap: 20px;
-    flex-wrap: wrap;
+  .footer__content {
+    flex-flow: column;
+  }
+
+  .footer__info {
     width: 100%;
   }
 
-  .footer-social__list {
-    width: 50%;
+  .footer__thumb {
+    flex-flow: column;
   }
 
-  .footer__box {
-    width: 30%;
+  .footer-payment__content .footer__subtitle {
+    display: none;
   }
 
   .footer-social__list {
-    width: 85%;
-    display: flex;
-    margin: 0 auto;
+    width: 70%;
   }
 
   .footer-payment__list {
-    row-gap: 20px;
-    flex-wrap: wrap;
-  }
+    flex-flow: wrap;
+    gap: 20px;
+    column-gap: 40px;
 
-  .footer-payment__item {
-    width: 30%;
-    display: flex;
     justify-content: center;
   }
 }

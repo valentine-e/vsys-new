@@ -263,7 +263,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </li>
 
               <li class="navbar__item">
-                <button class="dropdown__button" href="#">
+                <button class="dropdown__button">
                   Cloud<span class="menu-arrow"></span>
                 </button>
                 <ul class="dropdown__menu">
@@ -303,7 +303,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </li>
 
               <li class="navbar__item">
-                <button class="dropdown__button" href="#">
+                <button class="dropdown__button">
                   Services<span class="menu-arrow"></span>
                 </button>
                 <ul class="dropdown__menu">
@@ -343,7 +343,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </li>
 
               <li class="navbar__item">
-                <button class="dropdown__button" href="#">
+                <button class="dropdown__button">
                   Solutions<span class="menu-arrow"></span>
                 </button>
                 <ul class="dropdown__menu">
@@ -383,7 +383,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </li>
 
               <li class="navbar__item">
-                <button class="dropdown__button" href="#">
+                <button class="dropdown__button">
                   Company<span class="menu-arrow"></span>
                 </button>
                 <ul class="dropdown__menu">
@@ -423,7 +423,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </li>
 
               <li class="navbar__item">
-                <button class="dropdown__button" href="#">
+                <button class="dropdown__button">
                   Recources<span class="menu-arrow"></span>
                 </button>
                 <ul class="dropdown__menu">
@@ -461,37 +461,37 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   </li>
                 </ul>
               </li>
-
-              <div class="mobile-menu__buttons">
-                <button class="button button--transparent button--sm">
-                  LOGIN
-                </button>
-
-                <div class="navbar__item navbar__item--width">
-                  <a class="dropdown__button button--lang">
-                    <svg class="planet-icon" width="40" height="40">
-                      <use href="./images/sprite.svg#planet-icon"></use>
-                    </svg>
-                    English <span class="menu-arrow"></span>
-                  </a>
-                  <ul
-                    class="dropdown__menu dropdown__menu--lang dropdown__menu--white"
-                  >
-                    <li>
-                      <a class="dropdown__link dropdown__link--black" href="#"
-                        >UA</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown__link dropdown__link--black" href="#"
-                        >Русский</a
-                      >
-                    </li>
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
             </ul>
+
+            <div class="mobile-menu__buttons">
+              <button class="button button--transparent button--sm">
+                LOGIN
+              </button>
+
+              <div class="navbar__item navbar__item--width">
+                <a class="dropdown__button button--lang">
+                  <svg class="planet-icon" width="40" height="40">
+                    <use href="./images/sprite.svg#planet-icon"></use>
+                  </svg>
+                  English <span class="menu-arrow"></span>
+                </a>
+                <ul
+                  class="dropdown__menu dropdown__menu--lang dropdown__menu--white"
+                >
+                  <li>
+                    <a class="dropdown__link dropdown__link--black" href="#"
+                      >UA</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown__link dropdown__link--black" href="#"
+                      >Русский</a
+                    >
+                  </li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -510,7 +510,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <section class="article-page__content">
         <article>
           <img
-            width="50%"
             class="article-page__image"
             src="./images/blog-article__1.webp"
             alt="Article illustration"
@@ -657,10 +656,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           >
             joanne rowling
           </h2>
-          <p class="author-section__label">author</p>
+          <div class="author-section__info">
+            <p class="author-section__label">author</p>
+            <p class="author__label">4 articles</p>
+          </div>
         </div>
 
-        <div class="author__info">
+        <div class="author-section__description">
           <p>
             Sereda Stas has an impressive mixture of technical education and
             practical work experience. In brief, Stas is responsible for the
@@ -671,8 +673,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             demonstrates an ability to operate at the edge of development,
             administration, and security simultaneously.
           </p>
-
-          <p class="author__label">4 articles</p>
         </div>
       </section>
 

@@ -24,19 +24,23 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  gap: 10px;
 }
 
-.author__info {
+.author-section__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.author-section__description {
   width: 65%;
 }
 
 .author-section__image {
   width: 150px;
   border-radius: 100%;
-}
-
-.author-section__name {
-  margin-top: 20px;
 }
 
 .author-section__list {
@@ -52,5 +56,23 @@
   width: fit-content;
   padding: 5px 10px;
   background-color: var(--price-card-bcg);
-  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .author__section {
+    flex-flow: column;
+    gap: 30px;
+  }
+
+  .author__content {
+    width: 100%;
+  }
+
+  .author__info {
+    width: 100%;
+  }
+
+  .author-section__description {
+    width: 100%;
+  }
 }

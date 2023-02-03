@@ -86,15 +86,19 @@
 }
 
 .price-billing__button {
+  display: flex;
+  flex-flow: column;
+
   background-color: var(--primary-background-color);
   border: 1px SOLID var(--accent-color);
   padding: 10px 20px;
   border-radius: 10px;
 }
 
-.price-billing__button p {
-  text-transform: uppercasece__list;
-  margin-top: 5px;
+.price-billing__label {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  margin: 10px auto 0;
 }
 
 .price-billing__button--blue {
