@@ -2347,7 +2347,7 @@ input[type=radio] {
     gap: 10px;
   }
   .main-blog__thumb {
-    padding: 10px;
+    padding: 0;
   }
   .other-blog__list {
     flex-flow: column;
