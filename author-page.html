@@ -471,175 +471,1125 @@
       </div>
     </header>
 
-    <main class="vsys-container">
-      <div>
+    <main>
+      <div class="vsys-container">
         <a class="author-page__breadcrumbs" href="./blog.html"
           ><span class="menu-arrow menu-arrow--left menu-arrow--big"></span>READ
           OUR BLOG VIRTUAL SYSTEMS</a
         >
       </div>
 
-      <section class="author__section">
-        <div class="author__content">
-          <img
-            class="author-section__image"
-            src="./images/author-photo.jpg"
-            alt="#"
-          />
-          <h2
-            class="section-subtitle section-subtitle--blue author-section__name"
-          >
-            joanne rowling
-          </h2>
-          <div class="author-section__info">
-            <p class="author-section__label">author</p>
-            <p class="author__label">4 articles</p>
-          </div>
-        </div>
+      <!-- About author section  -->
 
-        <div class="author-section__description">
-          <p>
-            Sereda Stas has an impressive mixture of technical education and
-            practical work experience. In brief, Stas is responsible for the
-            following ensuring robust and trustworthy IT infrastructure
-            security; proactive and persistent network and infrastructure
-            monitoring; preventing any possible security breach; other
-            security-related tasks and issues. His unique set of skills
-            demonstrates an ability to operate at the edge of development,
-            administration, and security simultaneously.
-          </p>
+      <section>
+        <div class="vsys-container">
+          <div class="author__section">
+            <div class="author__content">
+              <img
+                class="author-section__image"
+                src="./images/author-photo.jpg"
+                alt="#"
+              />
+              <h2
+                class="section-subtitle section-subtitle--blue author-section__name"
+              >
+                joanne rowling
+              </h2>
+              <div class="author-section__info">
+                <p class="author-section__label">author</p>
+                <p class="author__label">4 articles</p>
+              </div>
+            </div>
+
+            <div class="author-section__description">
+              <p>
+                Sereda Stas has an impressive mixture of technical education and
+                practical work experience. In brief, Stas is responsible for the
+                following ensuring robust and trustworthy IT infrastructure
+                security; proactive and persistent network and infrastructure
+                monitoring; preventing any possible security breach; other
+                security-related tasks and issues. His unique set of skills
+                demonstrates an ability to operate at the edge of development,
+                administration, and security simultaneously.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <ul class="main-blog__list author-section__list">
-        <li class="main-blog__item author-section__link">
-          <a class="main-blog__link" href="./article-page.html"
-            ><article>
-              <div class="main-blog__description">
-                <img
-                  class="main-blog__image"
-                  src="./images/blog-article__1.webp"
-                  alt="Blog article illustration"
-                />
-                <p class="main-blog__text">
-                  Christmas is a time of giving, and we’d like to give you a
-                  huge thanks for being our cherished customer. We hope your
-                  dreams come true this Christmas and The New Year, as you’ve
-                  made our dreams come true this year by simply being our
-                  customer. Have a happy, happy holiday season, and we look
-                  forward to working with you in the New Year. Please accept our
-                  warmest and sincere wishes on behalf of the VSYS Host Team!
-                </p>
-              </div>
+      <!-- MORE POSTS FROM OUR BLOG  -->
 
-              <div class="main-blog__thumb">
-                <div class="main-blog__info">
-                  <a class="main-blog__author" href="#">Stas Sereda</a>
-                  <time datetime="2023-02-02">02.02.2023</time>
+      <section class="article__section">
+        <div class="vsys-container">
+          <!-- Olter article list(min width 1200px) -->
+
+          <ul
+            id="paginated-list"
+            data-current-page="1"
+            aria-live="polite"
+            class="article__list display-none--mobile"
+          >
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+
+            <li class="article__item">
+              <article>
+                <a
+                  class="article__link article__description"
+                  href="./article-page.html"
+                >
+                  <img
+                    class="article__image"
+                    src="./images/blog-article__1.webp"
+                    alt="Blog article illustration"
+                  />
+                  <p class="article__text">
+                    Christmas is a time of giving, and we’d like to give you a
+                    huge thanks for being our cherished customer. We hope your
+                    dreams come true this Christmas and The New Year, as you’ve
+                    made our dreams come true this year by simply being our
+                    customer. Have a happy, happy holiday season, and we look
+                    forward to working with you in the New Year. Please accept
+                    our warmest and sincere wishes on behalf of the VSYS Host
+                    Team!
+                  </p>
+                </a>
+
+                <div class="article__thumb">
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html">
+                      <!-- <svg class="article__icon" width="18" height="18">
+                        <use
+                          class="article__image"
+                          href="./images/sprite.svg#article-author-icon"
+                        ></use>
+                      </svg> -->
+
+                      Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+
+                  <a class="article__article" href="./article-page.html"
+                    ><h3 class="section-subtitle">
+                      What is unlimited bandwidth?
+                    </h3></a
+                  >
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <!-- Olter article list(max width 1199px) -->
+
+          <ul
+            id="paginated-list"
+            data-current-page="1"
+            aria-live="polite"
+            class="article__list display-none--desk"
+          >
+            <li class="article__item">
+              <article class="article__article">
+                <div class="article__illustration">
+                  <a href="./article-page.html">
+                    <img
+                      class="article__image"
+                      src="./images/blog-article__1.webp"
+                      alt="Blog article illustration"
+                    />
+                  </a>
                 </div>
 
-                <h3 class="section-subtitle">What is unlimited bandwidth?</h3>
-              </div>
-            </article>
-          </a>
-        </li>
+                <div class="article__thumb">
+                  <a class="article__link" href="./article-page.html">
+                    <h3 class="section-subtitle">
+                      What is unlimited bandwidth?What is unlimited bandwidth?
+                    </h3>
+                    <p class="article__text">
+                      Christmas is a time of giving, and we’d like to give you a
+                      huge thanks for being our cherished customer. We hope your
+                      dreams come true this Christmas and The New Year...
+                    </p></a
+                  >
 
-        <li class="main-blog__item author-section__link">
-          <a class="main-blog__link" href="./article-page.html"
-            ><article>
-              <div class="main-blog__description">
-                <img
-                  class="main-blog__image"
-                  src="./images/blog-article__1.webp"
-                  alt="Blog article illustration"
-                />
-                <p class="main-blog__text">
-                  Christmas is a time of giving, and we’d like to give you a
-                  huge thanks for being our cherished customer. We hope your
-                  dreams come true this Christmas and The New Year, as you’ve
-                  made our dreams come true this year by simply being our
-                  customer. Have a happy, happy holiday season, and we look
-                  forward to working with you in the New Year. Please accept our
-                  warmest and sincere wishes on behalf of the VSYS Host Team!
-                </p>
-              </div>
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html"
+                      >Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
 
-              <div class="main-blog__thumb">
-                <div class="main-blog__info">
-                  <a class="main-blog__author" href="#">Stas Sereda</a>
-                  <time datetime="2023-02-02">02.02.2023</time>
+            <li class="article__item">
+              <article class="article__article">
+                <div class="article__illustration">
+                  <a href="./article-page.html">
+                    <img
+                      class="article__image"
+                      src="./images/blog-article__1.webp"
+                      alt="Blog article illustration"
+                    />
+                  </a>
                 </div>
 
-                <h3 class="section-subtitle">What is unlimited bandwidth?</h3>
-              </div>
-            </article>
-          </a>
-        </li>
+                <div class="article__thumb">
+                  <a class="article__link" href="./article-page.html">
+                    <h3 class="section-subtitle">
+                      What is unlimited bandwidth?What is unlimited bandwidth?
+                    </h3>
+                    <p class="article__text">
+                      Christmas is a time of giving, and we’d like to give you a
+                      huge thanks for being our cherished customer. We hope your
+                      dreams come true this Christmas and The New Year...
+                    </p></a
+                  >
 
-        <li class="main-blog__item author-section__link">
-          <a class="main-blog__link" href="./article-page.html"
-            ><article>
-              <div class="main-blog__description">
-                <img
-                  class="main-blog__image"
-                  src="./images/blog-article__1.webp"
-                  alt="Blog article illustration"
-                />
-                <p class="main-blog__text">
-                  Christmas is a time of giving, and we’d like to give you a
-                  huge thanks for being our cherished customer. We hope your
-                  dreams come true this Christmas and The New Year, as you’ve
-                  made our dreams come true this year by simply being our
-                  customer. Have a happy, happy holiday season, and we look
-                  forward to working with you in the New Year. Please accept our
-                  warmest and sincere wishes on behalf of the VSYS Host Team!
-                </p>
-              </div>
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html"
+                      >Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
 
-              <div class="main-blog__thumb">
-                <div class="main-blog__info">
-                  <a class="main-blog__author" href="#">Stas Sereda</a>
-                  <time datetime="2023-02-02">02.02.2023</time>
+            <li class="article__item">
+              <article class="article__article">
+                <div class="article__illustration">
+                  <a href="./article-page.html">
+                    <img
+                      class="article__image"
+                      src="./images/blog-article__1.webp"
+                      alt="Blog article illustration"
+                    />
+                  </a>
                 </div>
 
-                <h3 class="section-subtitle">What is unlimited bandwidth?</h3>
-              </div>
-            </article>
-          </a>
-        </li>
+                <div class="article__thumb">
+                  <a class="article__link" href="./article-page.html">
+                    <h3 class="section-subtitle">
+                      What is unlimited bandwidth?What is unlimited bandwidth?
+                    </h3>
+                    <p class="article__text">
+                      Christmas is a time of giving, and we’d like to give you a
+                      huge thanks for being our cherished customer. We hope your
+                      dreams come true this Christmas and The New Year...
+                    </p></a
+                  >
 
-        <li class="main-blog__item author-section__link">
-          <a class="main-blog__link" href="./article-page.html"
-            ><article>
-              <div class="main-blog__description">
-                <img
-                  class="main-blog__image"
-                  src="./images/blog-article__1.webp"
-                  alt="Blog article illustration"
-                />
-                <p class="main-blog__text">
-                  Christmas is a time of giving, and we’d like to give you a
-                  huge thanks for being our cherished customer. We hope your
-                  dreams come true this Christmas and The New Year, as you’ve
-                  made our dreams come true this year by simply being our
-                  customer. Have a happy, happy holiday season, and we look
-                  forward to working with you in the New Year. Please accept our
-                  warmest and sincere wishes on behalf of the VSYS Host Team!
-                </p>
-              </div>
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html"
+                      >Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
 
-              <div class="main-blog__thumb">
-                <div class="main-blog__info">
-                  <a class="main-blog__author" href="#">Stas Sereda</a>
-                  <time datetime="2023-02-02">02.02.2023</time>
+            <li class="article__item">
+              <article class="article__article">
+                <div class="article__illustration">
+                  <a href="./article-page.html">
+                    <img
+                      class="article__image"
+                      src="./images/blog-article__1.webp"
+                      alt="Blog article illustration"
+                    />
+                  </a>
                 </div>
 
-                <h3 class="section-subtitle">What is unlimited bandwidth?</h3>
-              </div>
-            </article>
-          </a>
-        </li>
-      </ul>
+                <div class="article__thumb">
+                  <a class="article__link" href="./article-page.html">
+                    <h3 class="section-subtitle">
+                      What is unlimited bandwidth?What is unlimited bandwidth?
+                    </h3>
+                    <p class="article__text">
+                      Christmas is a time of giving, and we’d like to give you a
+                      huge thanks for being our cherished customer. We hope your
+                      dreams come true this Christmas and The New Year...
+                    </p></a
+                  >
+
+                  <div class="article__info">
+                    <a class="article__author" href="./author-page.html"
+                      >Stas Sereda</a
+                    >
+                    <time class="article__datetime" datetime="2023-02-02"
+                      >02.02.2023</time
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <!-- Pagination  -->
+
+          <nav class="pagination-container">
+            <button
+              class="pagination-button"
+              id="prev-button"
+              aria-label="Previous page"
+              title="Previous page"
+            >
+              <span class="menu-arrow menu-arrow--big menu-arrow--left"></span>
+            </button>
+
+            <div class="pagination-numbers" id="pagination-numbers"></div>
+
+            <button
+              class="pagination-button"
+              id="next-button"
+              aria-label="Next page"
+              title="Next page"
+            >
+              <span class="menu-arrow menu-arrow--big menu-arrow--right"></span>
+            </button>
+          </nav>
+        </div>
+      </section>
     </main>
 
     <!-- Footer  -->
@@ -796,5 +1746,6 @@
 
     <script src="./js/dropdown.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/pagination.js"></script>
   </body>
 </html>
