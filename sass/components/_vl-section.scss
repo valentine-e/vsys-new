@@ -1,0 +1,56 @@
+.vl-section {
+  position: relative;
+  background: #fff;
+  padding: 60px 0;
+}
+
+.vl-content {
+  display: flex;
+}
+
+.vl-background {
+  //   background-image: url(/images/love-is-bcg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.vl-illustration {
+  position: relative;
+}
+
+.vl-slogan {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  white-space: nowrap;
+  color: #e61253;
+}
+
+.vl-info {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.vl-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.vl-description {
+  text-align: center;
+}
+
+.vl-button {
+  color: #e51253;
+  background-color: var(--secondary-text-color);
+  border: 1px solid #e51253;
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
